@@ -1,0 +1,9 @@
+//
+// Document element
+//
+
+@if $enable-reset {
+	html {
+		@extend %reset_all !optional;
+	}
+}

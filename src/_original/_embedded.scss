@@ -1,0 +1,77 @@
+//
+// Embedded content
+//
+
+@if $enable-xxxxx { // change xxxxx
+	area {
+
+	}
+
+	iframe {
+
+	}
+
+	img {
+
+	}
+
+	map {
+
+	}
+
+	object {
+
+	}
+
+	param {
+
+	}
+
+	@if $enable-html4 {
+		applet {
+
+		}
+
+		bgsound {
+
+		}
+
+		frame {
+
+		}
+
+		frameset {
+
+		}
+	}
+
+	@if $enable-html5 {
+		audio {
+
+		}
+
+		embed {
+
+		}
+
+		picture {
+
+		}
+
+		source {
+
+		}
+
+		svg {
+
+		}
+
+		track {
+
+		}
+
+		video {
+
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@if $enable-reset {
+	%reset_all {
+		border: 0;
+		font: inherit;
+		font-size: 100%;
+		margin: 0;
+		padding: 0;
+		vertical-align: baseline;
+	}
+
+	%reset_display_block {
+		display: block;
+	}
+
+	%reset_blockquote {
+		quotes: none;
+	}
+
+
+	%reset_blockquote_before_after {
+		content: '';
+		content: none;
+	}
+
+	%reset_list {
+		list-style: none;
+	}
+}

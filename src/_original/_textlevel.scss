@@ -1,0 +1,176 @@
+//
+// Text-level semantics
+//
+
+@if $enable-xxxxx { // change xxxxx
+	a {
+
+	}
+
+	abbr {
+
+	}
+
+	b {
+
+	}
+
+	bdo {
+
+	}
+
+	br {
+
+	}
+
+	cite {
+
+	}
+
+	code {
+
+	}
+
+	dfn {
+
+	}
+
+	em {
+
+	}
+
+	i {
+
+	}
+
+	kbd {
+
+	}
+
+	q {
+
+		&:before, &:after {
+
+		}
+	}
+
+	s {
+
+	}
+
+	samp {
+
+	}
+
+	small {
+
+	}
+
+	span {
+
+	}
+
+	strong {
+
+	}
+
+	sub {
+
+	}
+
+	sup {
+
+	}
+
+	u {
+
+	}
+
+	var {
+
+	}
+
+	@if $enable-html4 {
+		acronym {
+
+		}
+
+		big {
+
+		}
+
+		blink {
+
+		}
+
+		center {
+
+		}
+
+		listing {
+
+		}
+
+		marquee {
+
+		}
+
+		spacer {
+
+		}
+
+		strike {
+
+		}
+
+		tt {
+
+		}
+
+		xmp {
+
+		}
+	}
+
+	@if $enable-html5 {
+		bdi {
+
+		}
+
+		data {
+
+		}
+
+		mark {
+
+		}
+
+		rb {
+
+		}
+
+		rp {
+
+		}
+
+		rt {
+
+		}
+
+		rtc {
+
+		}
+
+		ruby {
+
+		}
+
+		time {
+
+		}
+
+		wbr {
+
+		}
+	}
+}

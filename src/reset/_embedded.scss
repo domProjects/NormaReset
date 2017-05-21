@@ -1,0 +1,77 @@
+//
+// Embedded content
+//
+
+@if $enable-reset {
+	area {
+		@extend %reset_all !optional;
+	}
+
+	iframe {
+		@extend %reset_all !optional;
+	}
+
+	img {
+		@extend %reset_all !optional;
+	}
+
+	map {
+		@extend %reset_all !optional;
+	}
+
+	object {
+		@extend %reset_all !optional;
+	}
+
+	param {
+		@extend %reset_all !optional;
+	}
+
+	@if $enable-html4 {
+		applet {
+			@extend %reset_all !optional;
+		}
+
+		bgsound {
+			@extend %reset_all !optional;
+		}
+
+		frame {
+			@extend %reset_all !optional;
+		}
+
+		frameset {
+			@extend %reset_all !optional;
+		}
+	}
+
+	@if $enable-html5 {
+		audio {
+			@extend %reset_all !optional;
+		}
+
+		embed {
+			@extend %reset_all !optional;
+		}
+
+		picture {
+			@extend %reset_all !optional;
+		}
+
+		source {
+			@extend %reset_all !optional;
+		}
+
+		svg {
+			@extend %reset_all !optional;
+		}
+
+		track {
+			@extend %reset_all !optional;
+		}
+
+		video {
+			@extend %reset_all !optional;
+		}
+	}
+}

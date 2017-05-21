@@ -1,0 +1,7 @@
+// Options
+$enable-reset: true !default;
+$enable-html4: false !default;
+$enable-html5: true !default;
+
+// Reset HTML elements
+@import "reset_import";

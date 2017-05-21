@@ -1,0 +1,178 @@
+//
+// Text-level semantics
+//
+
+@if $enable-reset {
+	a {
+		@extend %reset_all !optional;
+	}
+
+	abbr {
+		@extend %reset_all !optional;
+	}
+
+	b {
+		@extend %reset_all !optional;
+	}
+
+	bdo {
+		@extend %reset_all !optional;
+	}
+
+	br {
+		@extend %reset_all !optional;
+	}
+
+	cite {
+		@extend %reset_all !optional;
+	}
+
+	code {
+		@extend %reset_all !optional;
+	}
+
+	dfn {
+		@extend %reset_all !optional;
+	}
+
+	em {
+		@extend %reset_all !optional;
+	}
+
+	i {
+		@extend %reset_all !optional;
+	}
+
+	kbd {
+		@extend %reset_all !optional;
+	}
+
+	q {
+		@extend %reset_all !optional;
+		@extend %reset_blockquote !optional;
+
+		&:before, &:after {
+			@extend %reset_blockquote_before_after !optional;
+		}
+	}
+
+	s {
+		@extend %reset_all !optional;
+	}
+
+	samp {
+		@extend %reset_all !optional;
+	}
+
+	small {
+		@extend %reset_all !optional;
+	}
+
+	span {
+		@extend %reset_all !optional;
+	}
+
+	strong {
+		@extend %reset_all !optional;
+	}
+
+	sub {
+		@extend %reset_all !optional;
+	}
+
+	sup {
+		@extend %reset_all !optional;
+	}
+
+	u {
+		@extend %reset_all !optional;
+	}
+
+	var {
+		@extend %reset_all !optional;
+	}
+
+	@if $enable-html4 {
+		acronym {
+			@extend %reset_all !optional;
+		}
+
+		big {
+			@extend %reset_all !optional;
+		}
+
+		blink {
+			@extend %reset_all !optional;
+		}
+
+		center {
+			@extend %reset_all !optional;
+		}
+
+		listing {
+			@extend %reset_all !optional;
+		}
+
+		marquee {
+			@extend %reset_all !optional;
+		}
+
+		spacer {
+			@extend %reset_all !optional;
+		}
+
+		strike {
+			@extend %reset_all !optional;
+		}
+
+		tt {
+			@extend %reset_all !optional;
+		}
+
+		xmp {
+			@extend %reset_all !optional;
+		}
+	}
+
+	@if $enable-html5 {
+		bdi {
+			@extend %reset_all !optional;
+		}
+
+		data {
+			@extend %reset_all !optional;
+		}
+
+		mark {
+			@extend %reset_all !optional;
+		}
+
+		rb {
+			@extend %reset_all !optional;
+		}
+
+		rp {
+			@extend %reset_all !optional;
+		}
+
+		rt {
+			@extend %reset_all !optional;
+		}
+
+		rtc {
+			@extend %reset_all !optional;
+		}
+
+		ruby {
+			@extend %reset_all !optional;
+		}
+
+		time {
+			@extend %reset_all !optional;
+		}
+
+		wbr {
+			@extend %reset_all !optional;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+// Options
+$enable-normalize:    true !default;
+$enable-normalize-v7: false !default;
+$enable-normalize-v6: false !default;
+$enable-normalize-v5: true !default;
+$enable-html4:        false !default;
+$enable-html5:        true !default;
+
+// Normalize HTML elements
+@import "normalize_import";

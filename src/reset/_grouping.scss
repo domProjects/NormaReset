@@ -1,0 +1,79 @@
+//
+// Grouping content
+//
+
+@if $enable-reset {
+	blockquote {
+		@extend %reset_all !optional;
+		@extend %reset_blockquote !optional;
+
+		&:before, &:after {
+			@extend %reset_blockquote_before_after !optional;
+		}
+	}
+
+	dd {
+		@extend %reset_all !optional;
+	}
+
+	div {
+		@extend %reset_all !optional;
+	}
+
+	dl {
+		@extend %reset_all !optional;
+	}
+
+	dt {
+		@extend %reset_all !optional;
+	}
+
+	hr {
+		@extend %reset_all !optional;
+	}
+
+	p {
+		@extend %reset_all !optional;
+	}
+
+	pre {
+		@extend %reset_all !optional;
+	}
+
+	ul {
+		@extend %reset_all !optional;
+		@extend %reset_list !optional;
+	}
+
+	ol {
+		@extend %reset_all !optional;
+		@extend %reset_list !optional;
+	}
+
+	li {
+		@extend %reset_all !optional;
+	}
+
+	@if $enable-html4 {
+		dir {
+			@extend %reset_all !optional;
+		}
+	}
+
+	@if $enable-html5 {
+		figure {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+
+		figcaption {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+
+		main {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+	}
+}

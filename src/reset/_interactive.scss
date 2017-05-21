@@ -1,0 +1,29 @@
+//
+// Interactive elements
+//
+
+@if $enable-reset {
+	menu {
+		@extend %reset_all !optional;
+		@extend %reset_display_block !optional;
+	}
+
+	@if $enable-html5 {
+		details {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+
+		dialog {
+			@extend %reset_all !optional;
+		}
+
+		menuitem {
+			@extend %reset_all !optional;
+		}
+
+		summary {
+			@extend %reset_all !optional;
+		}
+	}
+}

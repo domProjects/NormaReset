@@ -1,0 +1,159 @@
+//
+// Forms
+//
+
+@if $enable-reset {
+	form {
+		@extend %reset_all !optional;
+	}
+
+	button {
+		@extend %reset_all !optional;
+	}
+
+	fieldset {
+		@extend %reset_all !optional;
+	}
+
+	input {
+		@extend %reset_all !optional;
+	}
+
+	[type="button"] {
+
+	}
+
+	[type="checkbox"] {
+
+	}
+
+	[type="file"] {
+
+	}
+
+	[type="hidden"] {
+
+	}
+
+	[type="image"] {
+
+	}
+
+	[type="password"] {
+
+	}
+
+	[type="radio"] {
+
+	}
+
+	[type="reset"] {
+
+	}
+
+	[type="submit"] {
+
+	}
+
+	[type="text"] {
+
+	}
+
+	label {
+		@extend %reset_all !optional;
+	}
+
+	legend {
+		@extend %reset_all !optional;
+	}
+
+	optgroup {
+		@extend %reset_all !optional;
+	}
+
+	option {
+		@extend %reset_all !optional;
+	}
+
+	select {
+		@extend %reset_all !optional;
+	}
+
+	textarea {
+		@extend %reset_all !optional;
+	}
+
+	@if $enable-html5 {
+		datalist {
+			@extend %reset_all !optional;
+		}
+
+		[type="color"] {
+
+		}
+
+		[type="date"] {
+
+		}
+
+		[type="datetime"] {
+
+		}
+
+		[type="datetime-local"] {
+
+		}
+
+		[type="email"] {
+
+		}
+
+		[type="month"] {
+
+		}
+
+		[type="number"] {
+
+		}
+
+		[type="range"] {
+
+		}
+
+		[type="search"] {
+
+		}
+
+		[type="tel"] {
+
+		}
+
+		[type="time"] {
+
+		}
+
+		[type="url"] {
+
+		}
+
+		[type="week"] {
+
+		}
+
+		keygen {
+			@extend %reset_all !optional;
+		}
+
+		meter {
+			@extend %reset_all !optional;
+		}
+
+		output {
+			@extend %reset_all !optional;
+		}
+
+		progress {
+			@extend %reset_all !optional;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+//
+// Edits
+//
+
+@if $enable-reset {
+	del {
+		@extend %reset_all !optional;
+	}
+
+	ins {
+		@extend %reset_all !optional;
+	}
+}

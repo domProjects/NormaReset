@@ -1,0 +1,18 @@
+// Root elements
+@import "normalize/root";
+
+// Core mixins and placeholders
+@import "normalize/mixins";
+@import "normalize/placeholders";
+
+// Reset HTML elements
+@import "normalize/document";
+@import "normalize/sections";
+@import "normalize/grouping";
+@import "normalize/textlevel";
+@import "normalize/edits";
+@import "normalize/embedded";
+@import "normalize/tabular";
+@import "normalize/forms";
+@import "normalize/interactive";
+@import "normalize/scripting";

@@ -1,0 +1,47 @@
+//
+// Tabular data
+//
+
+@if $enable-reset {
+	table {
+		@extend %reset_all !optional;
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	caption {
+		@extend %reset_all !optional;
+	}
+
+	col {
+		@extend %reset_all !optional;
+	}
+
+	colgroup {
+		@extend %reset_all !optional;
+	}
+
+	tbody {
+		@extend %reset_all !optional;
+	}
+
+	td {
+		@extend %reset_all !optional;
+	}
+
+	tfoot {
+		@extend %reset_all !optional;
+	}
+
+	th {
+		@extend %reset_all !optional;
+	}
+
+	thead {
+		@extend %reset_all !optional;
+	}
+
+	tr {
+		@extend %reset_all !optional;
+	}
+}

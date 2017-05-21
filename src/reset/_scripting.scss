@@ -1,0 +1,15 @@
+//
+// Scripting
+//
+
+@if $enable-reset {
+	@if $enable-html5 {
+		canvas {
+			@extend %reset_all !optional;
+		}
+
+		template {
+			@extend %reset_all !optional;
+		}
+	}
+}

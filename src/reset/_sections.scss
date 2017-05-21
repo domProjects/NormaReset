@@ -1,0 +1,76 @@
+//
+// Sections
+//
+
+@if $enable-reset {
+	body {
+		@extend %reset_all !optional;
+		line-height: 1;
+	}
+
+	address {
+		@extend %reset_all !optional;
+	}
+
+	h1 {
+		@extend %reset_all !optional;
+	}
+
+	h2 {
+		@extend %reset_all !optional;
+	}
+
+	h3 {
+		@extend %reset_all !optional;
+	}
+
+	h4 {
+		@extend %reset_all !optional;
+	}
+
+	h5 {
+		@extend %reset_all !optional;
+	}
+
+	h6 {
+		@extend %reset_all !optional;
+	}
+
+	@if $enable-html4 {
+		hgroup {
+			@extend %reset_all !optional;
+		}
+	}
+
+	@if $enable-html5 {
+		article {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+
+		aside {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+
+		footer {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+
+		header {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+
+		nav {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+
+		section {
+			@extend %reset_all !optional;
+			@extend %reset_display_block !optional;
+		}
+	}
+}
