@@ -5,7 +5,10 @@
 @if $enable-xxxxx { // change xxxxx
 	blockquote {
 
-		&:before, &:after {
+		&:before {
+
+		}
+		&:after {
 
 		}
 	}
