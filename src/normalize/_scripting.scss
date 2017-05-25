@@ -1,0 +1,21 @@
+//
+// Scripting
+//
+
+@if $enable-normalize {
+
+	@if $enable-html5 {
+
+		canvas {
+			@if $enable-normalize-v1 {
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+			}
+		}
+
+		template {
+
+		}
+	}
+}

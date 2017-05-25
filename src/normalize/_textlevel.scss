@@ -1,0 +1,240 @@
+//
+// Text-level semantics
+//
+
+@if $enable-normalize {
+
+	a {
+		&:focus {
+			@if $enable-normalize-v1 {
+				outline: thin dotted;
+			}
+		}
+
+		&:active {
+			@if $enable-normalize-v1 {
+				outline: 0;
+			}
+		}
+
+		&:hover {
+			@if $enable-normalize-v1 {
+				outline: 0;
+			}
+		}
+	}
+
+	abbr {
+		&[title] {
+			@if $enable-normalize-v1 {
+				border-bottom: 1px dotted;
+			}
+		}
+	}
+
+	b {
+		@if $enable-normalize-v1 {
+			font-weight: bold;
+		}
+	}
+
+	bdo {
+
+	}
+
+	br {
+
+	}
+
+	cite {
+
+	}
+
+	code {
+		@if $enable-normalize-v1 {
+			font-family: monospace, serif;
+			_font-family: 'courier new', monospace;
+			font-size: 1em;
+		}
+	}
+
+	dfn {
+		@if $enable-normalize-v1 {
+			font-style: italic;
+		}
+	}
+
+	em {
+
+	}
+
+	i {
+
+	}
+
+	kbd {
+		@if $enable-normalize-v1 {
+			font-family: monospace, serif;
+			_font-family: 'courier new', monospace;
+			font-size: 1em;
+		}
+	}
+
+	q {
+		@if $enable-normalize-v1 {
+			quotes: none;
+
+			&:before, &:after {
+				content: '';
+				content: none;
+			}
+		}
+	}
+
+	s {
+
+	}
+
+	samp {
+		@if $enable-normalize-v1 {
+			font-family: monospace, serif;
+			_font-family: 'courier new', monospace;
+			font-size: 1em;
+		}
+	}
+
+	small {
+		@if $enable-normalize-v1 {
+			font-size: 75%;
+		}
+	}
+
+	span {
+
+	}
+
+	strong {
+		@if $enable-normalize-v1 {
+			font-weight: bold;
+		}
+	}
+
+	sub {
+		@if $enable-normalize-v1 {
+			bottom: -0.25em;
+
+			font-size: 75%;
+			line-height: 0;
+			position: relative;
+			vertical-align: baseline;
+		}
+	}
+
+	sup {
+		@if $enable-normalize-v1 {
+			top: -0.5em;
+
+			font-size: 75%;
+			line-height: 0;
+			position: relative;
+			vertical-align: baseline;
+		}
+	}
+
+	u {
+
+	}
+
+	var {
+
+	}
+
+	@if $enable-html4 {
+
+		acronym {
+
+		}
+
+		big {
+
+		}
+
+		blink {
+
+		}
+
+		center {
+
+		}
+
+		listing {
+
+		}
+
+		marquee {
+
+		}
+
+		spacer {
+
+		}
+
+		strike {
+
+		}
+
+		tt {
+
+		}
+
+		xmp {
+
+		}
+	}
+
+	@if $enable-html5 {
+
+		bdi {
+
+		}
+
+		data {
+
+		}
+
+		mark {
+			@if $enable-normalize-v1 {
+				background: #ff0;
+				color: #000;
+			}
+		}
+
+		rb {
+
+		}
+
+		rp {
+
+		}
+
+		rt {
+
+		}
+
+		rtc {
+
+		}
+
+		ruby {
+
+		}
+
+		time {
+
+		}
+
+		wbr {
+
+		}
+	}
+}

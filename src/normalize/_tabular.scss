@@ -1,0 +1,49 @@
+//
+// Tabular data
+//
+
+@if $enable-normalize {
+
+	table {
+		@if $enable-normalize-v1 {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+	}
+
+	caption {
+
+	}
+
+	col {
+
+	}
+
+	colgroup {
+
+	}
+
+	tbody {
+
+	}
+
+	td {
+
+	}
+
+	tfoot {
+
+	}
+
+	th {
+
+	}
+
+	thead {
+
+	}
+
+	tr {
+
+	}
+}

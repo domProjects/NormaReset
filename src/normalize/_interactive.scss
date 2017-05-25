@@ -1,0 +1,37 @@
+//
+// Interactive elements
+//
+
+@if $enable-normalize {
+
+	menu {
+		@if $enable-normalize-v1 {
+			margin: 1em 0;
+
+			padding: 0 0 0 40px;
+		}
+	}
+
+	@if $enable-html5 {
+
+		details {
+			@if $enable-normalize-v1 {
+				display: block;
+			}
+		}
+
+		dialog {
+
+		}
+
+		menuitem {
+
+		}
+
+		summary {
+			@if $enable-normalize-v1 {
+				display: block;
+			}
+		}
+	}
+}

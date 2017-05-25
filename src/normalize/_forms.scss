@@ -1,0 +1,263 @@
+//
+// Forms
+//
+
+@if $enable-normalize {
+
+	form {
+		@if $enable-normalize-v1 {
+			margin: 0;
+		}
+	}
+
+	button {
+		@if $enable-normalize-v1 {
+			font-family: sans-serif;
+
+			font-size: 100%;
+			margin: 0;
+			vertical-align: baseline;
+			*vertical-align: middle;
+
+			line-height: normal;
+
+			-webkit-appearance: button;
+			cursor: pointer;
+			*overflow: visible;
+
+			&[disabled] {
+				cursor: default;
+			}
+
+			&::-moz-focus-inner {
+				border: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	fieldset {
+		@if $enable-normalize-v1 {
+			border: 1px solid #c0c0c0;
+			margin: 0 2px;
+			padding: 0.35em 0.625em 0.75em;
+		}
+	}
+
+	input {
+		@if $enable-normalize-v1 {
+			font-family: sans-serif;
+
+			font-size: 100%;
+			margin: 0;
+			vertical-align: baseline;
+			*vertical-align: middle;
+
+			line-height: normal;
+
+			&[disabled] {
+				cursor: default;
+			}
+
+			&::-moz-focus-inner {
+				border: 0;
+				padding: 0;
+			}
+		}
+
+		&[type="button"] {
+
+		}
+
+		&[type="checkbox"] {
+			@if $enable-normalize-v1 {
+				box-sizing: border-box;
+				padding: 0;
+				*height: 13px;
+				*width: 13px;
+			}
+		}
+
+		&[type="file"] {
+
+		}
+
+		&[type="hidden"] {
+
+		}
+
+		&[type="image"] {
+
+		}
+
+		&[type="password"] {
+
+		}
+
+		&[type="radio"] {
+			@if $enable-normalize-v1 {
+				box-sizing: border-box;
+				padding: 0;
+				*height: 13px;
+				*width: 13px;
+			}
+		}
+
+		&[type="reset"] {
+			@if $enable-normalize-v1 {
+				-webkit-appearance: button;
+				cursor: pointer;
+				*overflow: visible;
+			}
+		}
+
+		&[type="submit"] {
+			@if $enable-normalize-v1 {
+				-webkit-appearance: button;
+				cursor: pointer;
+				*overflow: visible;
+			}
+		}
+
+		&[type="text"] {
+
+		}
+
+		@if $enable-html5 {
+
+			&[type="color"] {
+
+			}
+
+			&[type="date"] {
+
+			}
+
+			&[type="datetime"] {
+
+			}
+
+			&[type="datetime-local"] {
+
+			}
+
+			&[type="email"] {
+
+			}
+
+			&[type="month"] {
+
+			}
+
+			&[type="number"] {
+
+			}
+
+			&[type="range"] {
+
+			}
+
+			&[type="search"] {
+				@if $enable-normalize-v1 {
+					-webkit-appearance: textfield;
+					-moz-box-sizing: content-box;
+					-webkit-box-sizing: content-box;
+					box-sizing: content-box;
+
+					&::-webkit-search-cancel-button {
+						-webkit-appearance: none;
+					}
+
+					&::-webkit-search-decoration {
+						-webkit-appearance: none;
+					}
+				}
+			}
+
+			&[type="tel"] {
+
+			}
+
+			&[type="time"] {
+
+			}
+
+			&[type="url"] {
+
+			}
+
+			&[type="week"] {
+
+			}
+		}
+	}
+
+	label {
+
+	}
+
+	legend {
+		@if $enable-normalize-v1 {
+			border: 0;
+			padding: 0;
+			white-space: normal;
+			*margin-left: -7px;
+		}
+	}
+
+	optgroup {
+
+	}
+
+	option {
+
+	}
+
+	select {
+		@if $enable-normalize-v1 {
+			font-family: sans-serif;
+
+			font-size: 100%;
+			margin: 0;
+			vertical-align: baseline;
+			*vertical-align: middle;
+		}
+	}
+
+	textarea {
+		@if $enable-normalize-v1 {
+			font-family: sans-serif;
+
+			font-size: 100%;
+			margin: 0;
+			vertical-align: baseline;
+			*vertical-align: middle;
+
+			overflow: auto;
+			vertical-align: top;
+		}
+	}
+
+	@if $enable-html5 {
+
+		datalist {
+
+		}
+
+		keygen {
+
+		}
+
+		meter {
+
+		}
+
+		output {
+
+		}
+
+		progress {
+
+		}
+	}
+}

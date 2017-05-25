@@ -1,0 +1,116 @@
+//
+// Sections
+//
+
+@if $enable-normalize {
+
+	body {
+		@if $enable-normalize-v1 {
+			margin: 0;
+		}
+	}
+
+	address {
+
+	}
+
+	h1 {
+		@if $enable-normalize-v1 {
+			font-size: 2em;
+			margin: 0.67em 0;
+		}
+	}
+
+	h2 {
+		@if $enable-normalize-v1 {
+			font-size: 1.5em;
+			margin: 0.83em 0;
+		}
+	}
+
+	h3 {
+		@if $enable-normalize-v1 {
+			font-size: 1.17em;
+			margin: 1em 0;
+		}
+	}
+
+	h4 {
+		@if $enable-normalize-v1 {
+			font-size: 1em;
+			margin: 1.33em 0;
+		}
+	}
+
+	h5 {
+		@if $enable-normalize-v1 {
+			font-size: 0.83em;
+			margin: 1.67em 0;
+		}
+	}
+
+	h6 {
+		@if $enable-normalize-v1 {
+			font-size: 0.75em;
+			margin: 2.33em 0;
+		}
+	}
+
+	@if $enable-html4 {
+
+		hgroup {
+			@if $enable-normalize-v1 {
+				display: block;
+			}
+		}
+	}
+
+	@if $enable-html5 {
+
+		article {
+			@if $enable-normalize-v1 {
+				display: block;
+			}
+		}
+
+		aside {
+			@if $enable-normalize-v1 {
+				display: block;
+			}
+		}
+
+		footer {
+			@if $enable-normalize-v1 {
+				display: block;
+			}
+		}
+
+		header {
+			@if $enable-normalize-v1 {
+				display: block;
+			}
+		}
+
+		nav {
+			@if $enable-normalize-v1 {
+				display: block;
+
+				& ol {
+					list-style: none;
+					list-style-image: none;
+				}
+
+				& ul {
+					list-style: none;
+					list-style-image: none;
+				}
+			}
+		}
+
+		section {
+			@if $enable-normalize-v1 {
+				display: block;
+			}
+		}
+	}
+}

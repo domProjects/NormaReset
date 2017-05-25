@@ -3,6 +3,7 @@
 //
 
 @if $enable-reset {
+
 	form {
 		@extend %reset_all !optional;
 	}
@@ -17,46 +18,102 @@
 
 	input {
 		@extend %reset_all !optional;
-	}
 
-	[type="button"] {
 
-	}
+		&[type="button"] {
 
-	[type="checkbox"] {
+		}
 
-	}
+		&[type="checkbox"] {
 
-	[type="file"] {
+		}
 
-	}
+		&[type="file"] {
 
-	[type="hidden"] {
+		}
 
-	}
+		&[type="hidden"] {
 
-	[type="image"] {
+		}
 
-	}
+		&[type="image"] {
 
-	[type="password"] {
+		}
 
-	}
+		&[type="password"] {
 
-	[type="radio"] {
+		}
 
-	}
+		&[type="radio"] {
 
-	[type="reset"] {
+		}
 
-	}
+		&[type="reset"] {
 
-	[type="submit"] {
+		}
 
-	}
+		&[type="submit"] {
 
-	[type="text"] {
+		}
 
+		&[type="text"] {
+
+		}
+
+		@if $enable-html5 {
+
+			&[type="color"] {
+
+			}
+
+			&[type="date"] {
+
+			}
+
+			&[type="datetime"] {
+
+			}
+
+			&[type="datetime-local"] {
+
+			}
+
+			&[type="email"] {
+
+			}
+
+			&[type="month"] {
+
+			}
+
+			&[type="number"] {
+
+			}
+
+			&[type="range"] {
+
+			}
+
+			&[type="search"] {
+
+			}
+
+			&[type="tel"] {
+
+			}
+
+			&[type="time"] {
+
+			}
+
+			&[type="url"] {
+
+			}
+
+			&[type="week"] {
+
+			}
+		}
 	}
 
 	label {
@@ -84,60 +141,9 @@
 	}
 
 	@if $enable-html5 {
+
 		datalist {
 			@extend %reset_all !optional;
-		}
-
-		[type="color"] {
-
-		}
-
-		[type="date"] {
-
-		}
-
-		[type="datetime"] {
-
-		}
-
-		[type="datetime-local"] {
-
-		}
-
-		[type="email"] {
-
-		}
-
-		[type="month"] {
-
-		}
-
-		[type="number"] {
-
-		}
-
-		[type="range"] {
-
-		}
-
-		[type="search"] {
-
-		}
-
-		[type="tel"] {
-
-		}
-
-		[type="time"] {
-
-		}
-
-		[type="url"] {
-
-		}
-
-		[type="week"] {
-
 		}
 
 		keygen {

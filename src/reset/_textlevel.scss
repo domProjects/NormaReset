@@ -5,6 +5,19 @@
 @if $enable-reset {
 	a {
 		@extend %reset_all !optional;
+
+		&:active {
+
+		}
+		&:hover {
+
+		}
+		&:link {
+
+		}
+		&:visited {
+
+		}
 	}
 
 	abbr {
