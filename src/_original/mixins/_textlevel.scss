@@ -1,0 +1,29 @@
+@if $enable-xxxxx { // change xxxxx
+
+	@mixin links ($link, $visited, $hover, $active, $focus) {
+		& {
+			color: $link;
+
+			&:link {
+				color: $link;
+			}
+
+			&:visited {
+				color: $visited;
+			}
+
+			&:hover {
+				color: $hover;
+			}
+
+			&:active {
+				color: $active;
+			}
+
+			&:focus {
+				color: $focus;
+			}
+		}
+	}
+
+}

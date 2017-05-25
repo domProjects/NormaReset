@@ -5,18 +5,27 @@
 @if $enable-xxxxx { // change xxxxx
 	a {
 
-		&:active {
-
-		}
-		&:hover {
-
-		}
 		&:link {
 
 		}
+
 		&:visited {
 
 		}
+
+		&:hover {
+
+		}
+
+		&:active {
+
+		}
+
+		&:focus {
+
+		}
+		// OR
+		//@include links($color-link, $color-link-visited, $color-link-hover, $color-link-active, $color-link-focus);
 	}
 
 	abbr {

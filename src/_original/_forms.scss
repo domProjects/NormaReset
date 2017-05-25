@@ -18,6 +18,26 @@
 
 	input {
 
+		&:placeholder-shown {
+
+		}
+		// Chrome/Opera/Safari
+		&::-webkit-input-placeholder {
+
+		}
+		// Firefox 19+
+		&::-moz-placeholder {
+
+		}
+		// IE 10+
+		&:-ms-input-placeholder {
+
+		}
+		// Firefox 18-
+		&:-moz-placeholder {
+
+		}
+
 		&:-webkit-autofill {
 
 		}
@@ -79,6 +99,13 @@
 
 		&[type="text"] {
 
+			&:read-only {
+
+			}
+
+			&:-moz-read-only {
+
+			}
 		}
 
 		@if $enable-html5 {
@@ -139,6 +166,13 @@
 
 			&[type="email"] {
 
+				&:invalid {
+
+				}
+
+				&:valid {
+
+				}
 			}
 
 			&[type="month"] {
@@ -146,6 +180,14 @@
 			}
 
 			&[type="number"] {
+
+				&:in-range {
+
+				}
+
+				&:out-of-range {
+
+				}
 
 				&::-webkit-inner-spin-button {
 
@@ -359,26 +401,6 @@
 			&::-moz-progress-bar {
 
 			}
-		}
-
-		:placeholder-shown {
-
-		}
-		// Chrome/Opera/Safari
-		::-webkit-input-placeholder {
-
-		}
-		// Firefox 19+
-		::-moz-placeholder {
-
-		}
-		// IE 10+
-		:-ms-input-placeholder {
-
-		}
-		// Firefox 18-
-		:-moz-placeholder {
-
 		}
 	}
 }
