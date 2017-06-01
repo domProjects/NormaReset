@@ -30,6 +30,9 @@
 
 	abbr {
 
+		&[title] {
+		
+		}
 	}
 
 	b {
@@ -70,7 +73,11 @@
 
 	q {
 
-		&:before, &:after {
+		&:before {
+
+		}
+
+		&:after {
 
 		}
 	}
@@ -114,6 +121,9 @@
 	@if $enable-html4 {
 		acronym {
 
+			&[title] {
+
+			}
 		}
 
 		big {

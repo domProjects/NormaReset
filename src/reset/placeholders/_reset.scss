@@ -16,13 +16,16 @@
 		quotes: none;
 	}
 
-
-	%reset_blockquote_before_after {
+	%reset_blockquote_content {
 		content: '';
 		content: none;
 	}
 
 	%reset_list {
 		list-style: none;
+	}
+
+	%reset_textdecoration_none {
+		text-decoration: none;
 	}
 }

@@ -22,6 +22,10 @@
 
 	abbr {
 		@extend %reset_all !optional;
+
+		&[title] {
+			@extend %reset_textdecoration_none !optional;
+		}
 	}
 
 	b {
@@ -64,8 +68,12 @@
 		@extend %reset_all !optional;
 		@extend %reset_blockquote !optional;
 
-		&:before, &:after {
-			@extend %reset_blockquote_before_after !optional;
+		&:before {
+			@extend %reset_blockquote_content !optional;
+		}
+
+		&:after {
+			@extend %reset_blockquote_content !optional;
 		}
 	}
 
@@ -108,6 +116,10 @@
 	@if $enable-html4 {
 		acronym {
 			@extend %reset_all !optional;
+
+			&[title] {
+				@extend %reset_textdecoration_none !optional;
+			}
 		}
 
 		big {
