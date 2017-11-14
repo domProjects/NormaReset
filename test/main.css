@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+.demo_body-index, .demo_h1, .demo_h2, .demo_h3, .demo_iframe, header, section {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.demo_body-index {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.demo_body-browser, .demo_body-normalize, .demo_body-reset {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.demo_box {
+  padding: 1rem;
+  width: calc((100vw / 3) - 1rem);
+}
+
+.demo_box:first-child {
+  padding-right: 0;
+}
+
+.demo_box:last-child {
+  padding-left: 0;
+}
+
+.demo_iframe {
+  border: 1px solid #000;
+  height: 80vh;
+  width: 100%;
+}
+
+.demo_header {
+  border-bottom: 2px solid #000;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+.demo_h1, .demo_h2, .demo_h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.demo_h1 {
+  font-size: 2rem;
+}
+
+.demo_h2 {
+  font-size: 1.75rem;
+}
+
+.demo_h3 {
+  font-size: 1.5rem;
+}
+
+
+.demo_nav {
+  width: 100vw;
+}
+.demo_nav ul {
+  display: flex;
+  border-bottom: 1px solid #000;
+  list-style: none;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+}
+.demo_nav li {
+  flex: 1 1 auto;
+  background-image: linear-gradient(to bottom, transparent 50%, #999 50%, #999 95%, #000 95%);
+  background-size: 100% 200%;
+  background-position: top center;
+  color: #000;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+}
+.demo_nav li:hover {
+  background-position: bottom center;
+}
+.demo_nav li a {
+  color: #000;
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+}

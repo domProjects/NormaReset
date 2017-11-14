@@ -5,8 +5,8 @@ normalize &amp; reset css with Sass
  * normalize https://github.com/necolas/normalize.css/blob/master/CHANGELOG.md
 
 ## Sources
- * normalize.css v5.0.0 https://necolas.github.io/normalize.css/latest/normalize.css
- * reset.css v2.0.0 http://meyerweb.com/eric/tools/css/reset/
+ * normalize.css https://github.com/necolas/normalize.css
+ * reset.css http://meyerweb.com/eric/tools/css/reset/
 
 ## Documentation
  * https://www.w3.org/TR/html4/

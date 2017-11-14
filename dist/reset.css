@@ -15,13 +15,17 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+q:before, q:after {
   content: '';
   content: none;
 }
 
 ul, ol {
   list-style: none;
+}
+
+abbr[title] {
+  text-decoration: none;
 }
 
 body {
@@ -32,3 +36,5 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/*# sourceMappingURL=reset.css.map */
