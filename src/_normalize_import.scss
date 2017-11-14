@@ -1,3 +1,44 @@
+@if $enable-normalize {
+
+	@if $enable-normalize-v7 {
+/*
+ * Normalize version 7.0.0
+ */
+	}
+	@if $enable-normalize-v6 {
+/*
+ * Normalize version 6.0.0
+ */
+	}
+	@if $enable-normalize-v5 {
+/*
+ * Normalize version 5.0.0
+ */
+	}
+	@if $enable-normalize-v4 {
+/*
+ * Normalize version 4.2.0
+ */
+	}
+	@if $enable-normalize-v3 {
+/*
+ * Normalize version 3.0.3
+ */
+	}
+	@if $enable-normalize-v2 {
+/*
+ * Normalize version 2.1.3
+ */
+	}
+	@if $enable-normalize-v1 {
+/*
+ * Normalize version 1.0.1
+ */
+	}
+
+}
+
+
 // Root elements
 @import "normalize/root";
 
