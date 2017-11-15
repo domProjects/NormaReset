@@ -9,7 +9,28 @@
 	}
 
 	button {
+		text-transform: none;
+		-webkit-appearance: button;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
 
+		&:disabled {
+			opacity: .65;
+		}
+
+		&:focus {
+			outline: 0;
+			text-decoration: none;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	[role="button"] {
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
 	}
 
 	fieldset {
@@ -17,6 +38,11 @@
 	}
 
 	input {
+
+		&:not([type="range"]) {
+			-ms-touch-action: manipulation;
+			touch-action: manipulation;
+		}
 
 		&:placeholder-shown {
 
@@ -54,188 +80,178 @@
 		&::-webkit-calendar-picker-indicator {
 
 		}
+	}
 
-		&[type="button"] {
+	[type="button"] {
+
+	}
+
+	[type="checkbox"] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		&::-ms-check {
+			display: none;
+		}
+
+		&:checked {
+
+		}
+	}
+
+	[type="file"] {
+
+		&::-ms-browse {
+
+		}
+ 
+		&::-ms-value {
 
 		}
 
-		&[type="checkbox"] {
+		&::-webkit-file-upload-button {
 
-			&:checked {
+		}
+	}
+
+	[type="hidden"] {
+
+	}
+
+	[type="image"] {
+
+	}
+
+	[type="password"] {
+
+	}
+
+	[type="radio"] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		&::-ms-check {
+			display: none;
+		}
+	}
+
+	[type="reset"] {
+		-webkit-appearance: button;
+	}
+
+	[type="submit"] {
+		-webkit-appearance: button;
+	}
+
+	[type="text"] {
+
+		&:read-only {
+
+		}
+
+		&:-moz-read-only {
+
+		}
+	}
+
+	@if $enable-html5 {
+
+		[type="color"] {
+
+			&::-webkit-color-swatch-wrapper {
+
+			}
+
+			&::-webkit-color-swatch {
+
+			}
+
+			&::-moz-color-swatch {
+
+			}
+
+			&::-moz-focus-inner {
 
 			}
 		}
 
-		&[type="file"] {
+		[type="date"] {
+			-webkit-appearance: listbox;
 
-			&::-webkit-file-upload-button {
+			&::-webkit-datetime-edit-month-field {
+
+			}
+
+			&::-webkit-datetime-edit-day-field {
+
+			}
+
+			&::-webkit-datetime-edit-year-field {
+
+			}
+
+			&::-webkit-clear-button {
+
+			}
+
+			&::-webkit-inner-spin-button {
+
+			}
+
+			&::-webkit-calendar-picker-indicator {
 
 			}
 		}
 
-		&[type="hidden"] {
+		[type="datetime"] {
 
 		}
 
-		&[type="image"] {
-
+		[type="datetime-local"] {
+			-webkit-appearance: listbox;
 		}
 
-		&[type="password"] {
+		[type="email"] {
 
-		}
-
-		&[type="radio"] {
-
-		}
-
-		&[type="reset"] {
-
-		}
-
-		&[type="submit"] {
-
-		}
-
-		&[type="text"] {
-
-			&:read-only {
+			&:invalid {
 
 			}
 
-			&:-moz-read-only {
+			&:valid {
 
 			}
 		}
 
-		@if $enable-html5 {
+		[type="month"] {
+			-webkit-appearance: listbox;
+		}
 
-			&[type="color"] {
+		[type="number"] {
 
-				&::-webkit-color-swatch-wrapper {
-
-				}
-
-				&::-webkit-color-swatch {
-
-				}
-
-				&::-moz-color-swatch {
-
-				}
-
-				&::-moz-focus-inner {
-
-				}
-			}
-
-			&[type="date"] {
-
-				&::-webkit-datetime-edit-month-field {
-
-				}
-
-				&::-webkit-datetime-edit-day-field {
-
-				}
-
-				&::-webkit-datetime-edit-year-field {
-
-				}
-
-				&::-webkit-clear-button {
-
-				}
-
-				&::-webkit-inner-spin-button {
-
-				}
-
-				&::-webkit-calendar-picker-indicator {
-
-				}
-			}
-
-			&[type="datetime"] {
+			&:in-range {
 
 			}
 
-			&[type="datetime-local"] {
+			&:out-of-range {
 
 			}
 
-			&[type="email"] {
-
-				&:invalid {
-
-				}
-
-				&:valid {
-
-				}
+			&::-webkit-inner-spin-button {
+				height: auto;
 			}
 
-			&[type="month"] {
-
+			&::-webkit-outer-spin-button {
+				height: auto;
 			}
+		}
 
-			&[type="number"] {
+		[type="range"] {
 
-				&:in-range {
-
-				}
-
-				&:out-of-range {
-
-				}
-
-				&::-webkit-inner-spin-button {
-
-				}
-
-				&::-webkit-outer-spin-button {
-
-				}
-			}
-
-			&[type="range"] {
-
-				&:focus {
-
-					&::-webkit-slider-runnable-track {
-
-					}
-
-					&::-ms-fill-lower {
-
-					}
-
-					&::-ms-fill-upper {
-
-					}
-				}
-
-				&::-webkit-slider-thumb {
-
-				}
+			&:focus {
 
 				&::-webkit-slider-runnable-track {
-
-				}
-
-				&::-moz-range-thumb {
-
-				}
-
-				&::-moz-range-track {
-
-				}
-
-				&::-ms-track {
-
-				}
-
-				&::-ms-thumb {
 
 				}
 
@@ -248,45 +264,92 @@
 				}
 			}
 
-			&[type="search"] {
-
-				&::-webkit-search-decoration {
-
-				}
-
-				&::-webkit-search-cancel-button {
-
-				}
-
-				&::-webkit-search-results-button {
-
-				}
-
-				&::-webkit-search-results-decoration {
-
-				}
-			}
-
-			&[type="tel"] {
+			&::-webkit-slider-thumb {
 
 			}
 
-			&[type="time"] {
+			&::-webkit-slider-runnable-track {
 
 			}
 
-			&[type="url"] {
+			&::-moz-range-thumb {
 
 			}
 
-			&[type="week"] {
+			&::-moz-range-track {
 
 			}
+
+			&::-ms-tooltip {
+
+			}
+			 
+			&::-ms-ticks-before {
+
+			}
+			 
+			&::-ms-ticks-after {
+
+			}
+			 
+			&::-ms-fill-upper {
+
+			}
+			 
+			&::-ms-fill-lower {
+
+			}
+			 
+			&::-ms-thumb {
+
+			}
+			 
+			&::-ms-track {
+
+			}
+		}
+
+		[type="search"] {
+			-webkit-appearance: none;
+			outline-offset: -2px;
+
+			&::-webkit-search-decoration {
+				-webkit-appearance: none;
+			}
+
+			&::-webkit-search-cancel-button {
+				-webkit-appearance: none;
+			}
+
+			&::-webkit-search-results-button {
+
+			}
+
+			&::-webkit-search-results-decoration {
+
+			}
+		}
+
+		[type="tel"] {
+
+		}
+
+		[type="time"] {
+			-webkit-appearance: listbox;
+		}
+
+		[type="url"] {
+
+		}
+
+		[type="week"] {
+
 		}
 	}
 
 	label {
-
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
 	}
 
 	legend {
@@ -302,6 +365,16 @@
 	}
 
 	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		text-transform: none;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+
+		&::-ms-expand {
+			display: none;
+		}
 
 		&:-webkit-autofill {
 
@@ -317,6 +390,10 @@
 	}
 
 	textarea {
+		overflow: auto;
+		resize: vertical;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
 
 		&:-webkit-autofill {
 
@@ -377,16 +454,21 @@
 		}
 
 		output {
-
+			display: inline-block;
 		}
 
 		progress {
+			vertical-align: baseline;
 
 			&[value] {
 
 			}
 
 			&:not([value]) {
+
+			}
+
+			&::-ms-fill {
 
 			}
 
@@ -402,55 +484,10 @@
 
 			}
 		}
+
+		::-webkit-file-upload-button {
+			font: inherit;
+			-webkit-appearance: button;
+		}
 	}
 }
-
-
-/*
-input[type="date"]{}
-input[type="month"]{}
-input[type="time"]{}
-input[type="week"]{}
-input[type="datetime"]{}
-input[type="datetime-local"]{}
-
-input::-webkit-datetime-edit{}
-input::-webkit-datetime-edit-fields-wrapper{}
-
-input::-webkit-datetime-edit-ampm-field{}
-input::-webkit-datetime-edit-day-field{}
-input::-webkit-datetime-edit-hour-field{}
-input::-webkit-datetime-edit-millisecond-field{}
-input::-webkit-datetime-edit-minute-field{}
-input::-webkit-datetime-edit-month-field{}
-input::-webkit-datetime-edit-second-field{}
-input::-webkit-datetime-edit-week-field{}
-input::-webkit-datetime-edit-year-field{}
-
-input::-webkit-datetime-edit-ampm-field:focus{}
-input::-webkit-datetime-edit-day-field:focus{}
-input::-webkit-datetime-edit-hour-field:focus{}
-input::-webkit-datetime-edit-millisecond-field:focus{}
-input::-webkit-datetime-edit-minute-field:focus{}
-input::-webkit-datetime-edit-month-field:focus{}
-input::-webkit-datetime-edit-second-field:focus{}
-input::-webkit-datetime-edit-week-field:focus{}
-input::-webkit-datetime-edit-year-field:focus{}
-
-input::-webkit-datetime-edit-year-field[disabled]{}
-input::-webkit-datetime-edit-month-field[disabled]{}
-input::-webkit-datetime-edit-week-field[disabled]{}
-input::-webkit-datetime-edit-day-field[disabled]{}
-input::-webkit-datetime-edit-ampm-field[disabled]{}
-input::-webkit-datetime-edit-hour-field[disabled]{}
-input::-webkit-datetime-edit-millisecond-field[disabled]{}
-input::-webkit-datetime-edit-minute-field[disabled]{}
-input::-webkit-datetime-edit-second-field[disabled]{}
-
-input::-webkit-datetime-edit-text{}
-
-input::-webkit-inner-spin-button{}
-
-input::-webkit-calendar-picker-indicator{}
-input::-webkit-calendar-picker-indicator:hover{}
-*/

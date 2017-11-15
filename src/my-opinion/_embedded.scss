@@ -4,7 +4,8 @@
 
 @if $enable-my-opinion {
 	area {
-
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
 	}
 
 	iframe {
@@ -12,7 +13,8 @@
 	}
 
 	img {
-
+		border-style: none;
+		vertical-align: middle;
 	}
 
 	map {
@@ -47,7 +49,12 @@
 
 	@if $enable-html5 {
 		audio {
+			display: inline-block;
 
+			&:not([controls]) {
+				display: none;
+				height: 0;
+			}
 		}
 
 		embed {
@@ -64,6 +71,9 @@
 
 		svg {
 
+			&:not(:root) {
+				overflow: hidden;
+			}
 		}
 
 		track {
@@ -71,7 +81,7 @@
 		}
 
 		video {
-
+			display: inline-block;
 		}
 	}
 }

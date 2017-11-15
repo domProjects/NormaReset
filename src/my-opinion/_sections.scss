@@ -12,27 +12,45 @@
 	}
 
 	h1 {
-
+		color: inherit;
+		font-family: inherit;
+		font-weight: 500;
+		font-size: 2.5rem;
 	}
 
 	h2 {
-
+		color: inherit;
+		font-family: inherit;
+		font-weight: 500;
+		font-size: 2rem;
 	}
 
 	h3 {
-
+		color: inherit;
+		font-family: inherit;
+		font-weight: 500;
+		font-size: 1.75rem;
 	}
 
 	h4 {
-
+		color: inherit;
+		font-family: inherit;
+		font-weight: 500;
+		font-size: 1.5rem;
 	}
 
 	h5 {
-
+		color: inherit;
+		font-family: inherit;
+		font-weight: 500;
+		font-size: 1.25rem;
 	}
 
 	h6 {
-
+		color: inherit;
+		font-family: inherit;
+		font-weight: 500;
+		font-size: 1rem;
 	}
 
 	@if $enable-html4 {

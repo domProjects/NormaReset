@@ -21,7 +21,9 @@
 		}
 
 		summary {
-
+			display: list-item;
+			-ms-touch-action: manipulation;
+			touch-action: manipulation;
 		}
 	}
 }

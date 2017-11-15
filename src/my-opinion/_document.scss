@@ -3,7 +3,28 @@
 //
 
 @if $enable-my-opinion {
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
 	html {
+		font-family: sans-serif;
+		line-height: 1.15;
+		-ms-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+		-ms-overflow-style: scrollbar;
+		-webkit-tap-highlight-color: transparent;
+
+		& [type="button"] {
+			-webkit-appearance: button;
+		}
+	}
+
+	::selection {
 
 	}
+
 }
