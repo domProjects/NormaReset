@@ -15,7 +15,7 @@
 	}
 
 	h1 {
-		@if $enable-normalize-v1 {
+		@if $enable-normalize-v1 or $enable-normalize-v6 {
 			font-size: 2em;
 			margin: 0.67em 0;
 		}
@@ -68,47 +68,49 @@
 	@if $enable-html5 {
 
 		article {
-			@if $enable-normalize-v1 {
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				display: block;
 			}
 		}
 
 		aside {
-			@if $enable-normalize-v1 {
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				display: block;
 			}
 		}
 
 		footer {
-			@if $enable-normalize-v1 {
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				display: block;
 			}
 		}
 
 		header {
-			@if $enable-normalize-v1 {
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				display: block;
 			}
 		}
 
 		nav {
-			@if $enable-normalize-v1 {
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				display: block;
 
-				& ol {
-					list-style: none;
-					list-style-image: none;
-				}
+				@if $enable-normalize-v1 {
+					& ol {
+						list-style: none;
+						list-style-image: none;
+					}
 
-				& ul {
-					list-style: none;
-					list-style-image: none;
+					& ul {
+						list-style: none;
+						list-style-image: none;
+					}
 				}
 			}
 		}
 
 		section {
-			@if $enable-normalize-v1 {
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				display: block;
 			}
 		}

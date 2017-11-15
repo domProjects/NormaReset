@@ -5,6 +5,11 @@
 @if $enable-normalize {
 
 	a {
+		@if $enable-normalize-v6 {
+			background-color: transparent;
+			-webkit-text-decoration-skip: objects;
+		}
+
 		&:focus {
 			@if $enable-normalize-v1 {
 				outline: thin dotted;
@@ -26,6 +31,12 @@
 
 	abbr {
 		&[title] {
+			@if $enable-normalize-v6 {
+				border-bottom: none;
+				text-decoration: underline;
+				text-decoration: underline dotted;
+			}
+
 			@if $enable-normalize-v1 {
 				border-bottom: 1px dotted;
 			}
@@ -33,6 +44,10 @@
 	}
 
 	b {
+		@if $enable-normalize-v6 {
+			font-weight: inherit;
+		}
+
 		@if $enable-normalize-v1 {
 			font-weight: bold;
 		}
@@ -51,6 +66,11 @@
 	}
 
 	code {
+		@if $enable-normalize-v6 {
+			font-family: monospace, monospace;
+			font-size: 1em;
+		}
+
 		@if $enable-normalize-v1 {
 			font-family: monospace, serif;
 			_font-family: 'courier new', monospace;
@@ -59,7 +79,7 @@
 	}
 
 	dfn {
-		@if $enable-normalize-v1 {
+		@if $enable-normalize-v1 or $enable-normalize-v6 {
 			font-style: italic;
 		}
 	}
@@ -73,6 +93,11 @@
 	}
 
 	kbd {
+		@if $enable-normalize-v6 {
+			font-family: monospace, monospace;
+			font-size: 1em;
+		}
+
 		@if $enable-normalize-v1 {
 			font-family: monospace, serif;
 			_font-family: 'courier new', monospace;
@@ -96,6 +121,11 @@
 	}
 
 	samp {
+		@if $enable-normalize-v6 {
+			font-family: monospace, monospace;
+			font-size: 1em;
+		}
+
 		@if $enable-normalize-v1 {
 			font-family: monospace, serif;
 			_font-family: 'courier new', monospace;
@@ -104,6 +134,10 @@
 	}
 
 	small {
+		@if $enable-normalize-v6 {
+			font-size: 80%;
+		}
+
 		@if $enable-normalize-v1 {
 			font-size: 75%;
 		}
@@ -114,15 +148,18 @@
 	}
 
 	strong {
+		@if $enable-normalize-v6 {
+			font-weight: inherit;
+		}
+
 		@if $enable-normalize-v1 {
 			font-weight: bold;
 		}
 	}
 
 	sub {
-		@if $enable-normalize-v1 {
+		@if $enable-normalize-v1 or $enable-normalize-v6 {
 			bottom: -0.25em;
-
 			font-size: 75%;
 			line-height: 0;
 			position: relative;
@@ -131,9 +168,8 @@
 	}
 
 	sup {
-		@if $enable-normalize-v1 {
+		@if $enable-normalize-v1 or $enable-normalize-v6 {
 			top: -0.5em;
-
 			font-size: 75%;
 			line-height: 0;
 			position: relative;
@@ -203,8 +239,15 @@
 		}
 
 		mark {
+			@if $enable-normalize-v6 {
+				background-color: #ff0;
+			}
+
 			@if $enable-normalize-v1 {
 				background: #ff0;
+			}
+
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				color: #000;
 			}
 		}

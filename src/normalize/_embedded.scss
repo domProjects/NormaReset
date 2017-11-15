@@ -13,6 +13,10 @@
 	}
 
 	img {
+		@if $enable-normalize-v6 {
+			border-style: none;
+		}
+
 		@if $enable-normalize-v1 {
 			border: 0;
 			-ms-interpolation-mode: bicubic;
@@ -53,10 +57,13 @@
 	@if $enable-html5 {
 
 		audio {
-			@if $enable-normalize-v1 {
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				display: inline-block;
-				*display: inline;
-				*zoom: 1;
+
+				@if $enable-normalize-v1 {
+					*display: inline;
+					*zoom: 1;
+				}
 
 				&:not([controls]) {
 					display: none;
@@ -78,7 +85,7 @@
 		}
 
 		svg {
-			@if $enable-normalize-v1 {
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				&:not(:root) {
 					overflow: hidden;
 				}

@@ -11,27 +11,48 @@
 	}
 
 	button {
+		@if $enable-normalize-v6 {
+			margin: 0;
+			overflow: visible;
+			text-transform: none;
+			-webkit-appearance: button;
+		}
+
 		@if $enable-normalize-v1 {
 			font-family: sans-serif;
-
 			font-size: 100%;
 			margin: 0;
 			vertical-align: baseline;
 			*vertical-align: middle;
-
 			line-height: normal;
-
 			-webkit-appearance: button;
 			cursor: pointer;
 			*overflow: visible;
+		}
 
-			&[disabled] {
+		&[disabled] {
+			@if $enable-normalize-v1 {
 				cursor: default;
 			}
+		}
 
-			&::-moz-focus-inner {
+		&::-moz-focus-inner {
+			@if $enable-normalize-v6 {
+				border-style: none;
+			}
+
+			@if $enable-normalize-v1 {
 				border: 0;
+			}
+
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				padding: 0;
+			}
+		}
+
+		&:-moz-focusring {
+			@if $enable-normalize-v6 {
+				outline: 1px dotted ButtonText;
 			}
 		}
 	}
@@ -45,14 +66,17 @@
 	}
 
 	input {
+		@if $enable-normalize-v6 {
+			margin: 0;
+			overflow: visible;
+		}
+
 		@if $enable-normalize-v1 {
 			font-family: sans-serif;
-
 			font-size: 100%;
 			margin: 0;
 			vertical-align: baseline;
 			*vertical-align: middle;
-
 			line-height: normal;
 
 			&[disabled] {
@@ -66,7 +90,18 @@
 		}
 
 		&[type="button"] {
+			&::-moz-focus-inner {
+				@if $enable-normalize-v6 {
+					border-style: none;
+					padding: 0;
+				}
+			}
 
+			&:-moz-focusring {
+				@if $enable-normalize-v6 {
+					outline: 1px dotted ButtonText;
+				}
+			}
 		}
 
 		&[type="checkbox"] {
@@ -105,17 +140,49 @@
 
 		&[type="reset"] {
 			@if $enable-normalize-v1 {
-				-webkit-appearance: button;
 				cursor: pointer;
 				*overflow: visible;
+			}
+
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
+				-webkit-appearance: button;
+			}
+
+			&::-moz-focus-inner {
+				@if $enable-normalize-v6 {
+					border-style: none;
+					padding: 0;
+				}
+			}
+
+			&:-moz-focusring {
+				@if $enable-normalize-v6 {
+					outline: 1px dotted ButtonText;
+				}
 			}
 		}
 
 		&[type="submit"] {
 			@if $enable-normalize-v1 {
-				-webkit-appearance: button;
 				cursor: pointer;
 				*overflow: visible;
+			}
+
+			@if $enable-normalize-v1 or $enable-normalize-v6 {
+				-webkit-appearance: button;
+			}
+
+			&::-moz-focus-inner {
+				@if $enable-normalize-v6 {
+					border-style: none;
+					padding: 0;
+				}
+			}
+
+			&:-moz-focusring {
+				@if $enable-normalize-v6 {
+					outline: 1px dotted ButtonText;
+				}
 			}
 		}
 
@@ -206,7 +273,9 @@
 	}
 
 	optgroup {
-
+		@if $enable-normalize-v6 {
+			margin: 0;
+		}
 	}
 
 	option {
@@ -214,9 +283,13 @@
 	}
 
 	select {
+		@if $enable-normalize-v6 {
+			margin: 0;
+			text-transform: none;
+		}
+
 		@if $enable-normalize-v1 {
 			font-family: sans-serif;
-
 			font-size: 100%;
 			margin: 0;
 			vertical-align: baseline;
@@ -225,14 +298,16 @@
 	}
 
 	textarea {
+		@if $enable-normalize-v6 {
+			margin: 0;
+		}
+
 		@if $enable-normalize-v1 {
 			font-family: sans-serif;
-
 			font-size: 100%;
 			margin: 0;
 			vertical-align: baseline;
 			*vertical-align: middle;
-
 			overflow: auto;
 			vertical-align: top;
 		}
