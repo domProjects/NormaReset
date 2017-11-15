@@ -1,0 +1,207 @@
+//
+// Text-level semantics
+//
+
+@if $enable-my-opinion {
+	a {
+
+		&:link {
+
+		}
+
+		&:visited {
+
+		}
+
+		&:hover {
+
+		}
+
+		&:active {
+
+		}
+
+		&:focus {
+
+		}
+		// OR
+		//@include links($color-link, $color-link-visited, $color-link-hover, $color-link-active, $color-link-focus);
+	}
+
+	abbr {
+
+		&[title] {
+		
+		}
+	}
+
+	b {
+
+	}
+
+	bdo {
+
+	}
+
+	br {
+
+	}
+
+	cite {
+
+	}
+
+	code {
+
+	}
+
+	dfn {
+
+	}
+
+	em {
+
+	}
+
+	i {
+
+	}
+
+	kbd {
+
+	}
+
+	q {
+
+		&:before {
+
+		}
+
+		&:after {
+
+		}
+	}
+
+	s {
+
+	}
+
+	samp {
+
+	}
+
+	small {
+
+	}
+
+	span {
+
+	}
+
+	strong {
+
+	}
+
+	sub {
+
+	}
+
+	sup {
+
+	}
+
+	u {
+
+	}
+
+	var {
+
+	}
+
+	@if $enable-html4 {
+		acronym {
+
+			&[title] {
+
+			}
+		}
+
+		big {
+
+		}
+
+		blink {
+
+		}
+
+		center {
+
+		}
+
+		listing {
+
+		}
+
+		marquee {
+
+		}
+
+		spacer {
+
+		}
+
+		strike {
+
+		}
+
+		tt {
+
+		}
+
+		xmp {
+
+		}
+	}
+
+	@if $enable-html5 {
+		bdi {
+
+		}
+
+		data {
+
+		}
+
+		mark {
+
+		}
+
+		rb {
+
+		}
+
+		rp {
+
+		}
+
+		rt {
+
+		}
+
+		rtc {
+
+		}
+
+		ruby {
+
+		}
+
+		time {
+
+		}
+
+		wbr {
+
+		}
+	}
+}

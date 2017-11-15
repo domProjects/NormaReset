@@ -1,0 +1,456 @@
+//
+// Forms
+//
+
+@if $enable-my-opinion {
+
+	form {
+
+	}
+
+	button {
+
+	}
+
+	fieldset {
+
+	}
+
+	input {
+
+		&:placeholder-shown {
+
+		}
+		// Chrome/Opera/Safari
+		&::-webkit-input-placeholder {
+
+		}
+		// Firefox 19+
+		&::-moz-placeholder {
+
+		}
+		// IE 10+
+		&:-ms-input-placeholder {
+
+		}
+		// Firefox 18-
+		&:-moz-placeholder {
+
+		}
+
+		&:-webkit-autofill {
+
+		}
+
+		&:-webkit-autofill:hover {
+
+		}
+
+		&:-webkit-autofill:focus {
+
+		}
+
+		// ???
+		&::-webkit-calendar-picker-indicator {
+
+		}
+
+		&[type="button"] {
+
+		}
+
+		&[type="checkbox"] {
+
+			&:checked {
+
+			}
+		}
+
+		&[type="file"] {
+
+			&::-webkit-file-upload-button {
+
+			}
+		}
+
+		&[type="hidden"] {
+
+		}
+
+		&[type="image"] {
+
+		}
+
+		&[type="password"] {
+
+		}
+
+		&[type="radio"] {
+
+		}
+
+		&[type="reset"] {
+
+		}
+
+		&[type="submit"] {
+
+		}
+
+		&[type="text"] {
+
+			&:read-only {
+
+			}
+
+			&:-moz-read-only {
+
+			}
+		}
+
+		@if $enable-html5 {
+
+			&[type="color"] {
+
+				&::-webkit-color-swatch-wrapper {
+
+				}
+
+				&::-webkit-color-swatch {
+
+				}
+
+				&::-moz-color-swatch {
+
+				}
+
+				&::-moz-focus-inner {
+
+				}
+			}
+
+			&[type="date"] {
+
+				&::-webkit-datetime-edit-month-field {
+
+				}
+
+				&::-webkit-datetime-edit-day-field {
+
+				}
+
+				&::-webkit-datetime-edit-year-field {
+
+				}
+
+				&::-webkit-clear-button {
+
+				}
+
+				&::-webkit-inner-spin-button {
+
+				}
+
+				&::-webkit-calendar-picker-indicator {
+
+				}
+			}
+
+			&[type="datetime"] {
+
+			}
+
+			&[type="datetime-local"] {
+
+			}
+
+			&[type="email"] {
+
+				&:invalid {
+
+				}
+
+				&:valid {
+
+				}
+			}
+
+			&[type="month"] {
+
+			}
+
+			&[type="number"] {
+
+				&:in-range {
+
+				}
+
+				&:out-of-range {
+
+				}
+
+				&::-webkit-inner-spin-button {
+
+				}
+
+				&::-webkit-outer-spin-button {
+
+				}
+			}
+
+			&[type="range"] {
+
+				&:focus {
+
+					&::-webkit-slider-runnable-track {
+
+					}
+
+					&::-ms-fill-lower {
+
+					}
+
+					&::-ms-fill-upper {
+
+					}
+				}
+
+				&::-webkit-slider-thumb {
+
+				}
+
+				&::-webkit-slider-runnable-track {
+
+				}
+
+				&::-moz-range-thumb {
+
+				}
+
+				&::-moz-range-track {
+
+				}
+
+				&::-ms-track {
+
+				}
+
+				&::-ms-thumb {
+
+				}
+
+				&::-ms-fill-lower {
+
+				}
+
+				&::-ms-fill-upper {
+
+				}
+			}
+
+			&[type="search"] {
+
+				&::-webkit-search-decoration {
+
+				}
+
+				&::-webkit-search-cancel-button {
+
+				}
+
+				&::-webkit-search-results-button {
+
+				}
+
+				&::-webkit-search-results-decoration {
+
+				}
+			}
+
+			&[type="tel"] {
+
+			}
+
+			&[type="time"] {
+
+			}
+
+			&[type="url"] {
+
+			}
+
+			&[type="week"] {
+
+			}
+		}
+	}
+
+	label {
+
+	}
+
+	legend {
+
+	}
+
+	optgroup {
+
+	}
+
+	option {
+
+	}
+
+	select {
+
+		&:-webkit-autofill {
+
+		}
+
+		&:-webkit-autofill:hover {
+
+		}
+
+		&:-webkit-autofill:focus {
+
+		}
+	}
+
+	textarea {
+
+		&:-webkit-autofill {
+
+		}
+
+		&:-webkit-autofill:hover {
+
+		}
+
+		&:-webkit-autofill:focus {
+
+		}
+	}
+
+	@if $enable-html5 {
+
+		datalist {
+
+		}
+
+		keygen {
+
+		}
+
+		meter {
+
+			&::-webkit-meter-bar {
+
+			}
+
+			&::-webkit-meter-optimum-value {
+
+			}
+
+			&::-webkit-meter-suboptimum-value {
+
+			}
+
+			&::-webkit-meter-even-less-good-value {
+
+			}
+
+			&::-moz-progress-bar {
+
+			}
+
+			&:-moz-meter-optimum {
+
+			}
+
+			&:-moz-meter-sub-optimum {
+
+			}
+
+			&:-moz-meter-sub-sub-optimum {
+
+			}
+		}
+
+		output {
+
+		}
+
+		progress {
+
+			&[value] {
+
+			}
+
+			&:not([value]) {
+
+			}
+
+			&::-webkit-progress-bar {
+
+			}
+
+			&::-webkit-progress-value {
+
+			}
+
+			&::-moz-progress-bar {
+
+			}
+		}
+	}
+}
+
+
+/*
+input[type="date"]{}
+input[type="month"]{}
+input[type="time"]{}
+input[type="week"]{}
+input[type="datetime"]{}
+input[type="datetime-local"]{}
+
+input::-webkit-datetime-edit{}
+input::-webkit-datetime-edit-fields-wrapper{}
+
+input::-webkit-datetime-edit-ampm-field{}
+input::-webkit-datetime-edit-day-field{}
+input::-webkit-datetime-edit-hour-field{}
+input::-webkit-datetime-edit-millisecond-field{}
+input::-webkit-datetime-edit-minute-field{}
+input::-webkit-datetime-edit-month-field{}
+input::-webkit-datetime-edit-second-field{}
+input::-webkit-datetime-edit-week-field{}
+input::-webkit-datetime-edit-year-field{}
+
+input::-webkit-datetime-edit-ampm-field:focus{}
+input::-webkit-datetime-edit-day-field:focus{}
+input::-webkit-datetime-edit-hour-field:focus{}
+input::-webkit-datetime-edit-millisecond-field:focus{}
+input::-webkit-datetime-edit-minute-field:focus{}
+input::-webkit-datetime-edit-month-field:focus{}
+input::-webkit-datetime-edit-second-field:focus{}
+input::-webkit-datetime-edit-week-field:focus{}
+input::-webkit-datetime-edit-year-field:focus{}
+
+input::-webkit-datetime-edit-year-field[disabled]{}
+input::-webkit-datetime-edit-month-field[disabled]{}
+input::-webkit-datetime-edit-week-field[disabled]{}
+input::-webkit-datetime-edit-day-field[disabled]{}
+input::-webkit-datetime-edit-ampm-field[disabled]{}
+input::-webkit-datetime-edit-hour-field[disabled]{}
+input::-webkit-datetime-edit-millisecond-field[disabled]{}
+input::-webkit-datetime-edit-minute-field[disabled]{}
+input::-webkit-datetime-edit-second-field[disabled]{}
+
+input::-webkit-datetime-edit-text{}
+
+input::-webkit-inner-spin-button{}
+
+input::-webkit-calendar-picker-indicator{}
+input::-webkit-calendar-picker-indicator:hover{}
+*/

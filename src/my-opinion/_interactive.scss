@@ -1,0 +1,27 @@
+//
+// Interactive elements
+//
+
+@if $enable-my-opinion {
+	menu {
+
+	}
+
+	@if $enable-html5 {
+		details {
+
+		}
+
+		dialog {
+
+		}
+
+		menuitem {
+
+		}
+
+		summary {
+
+		}
+	}
+}

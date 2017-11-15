@@ -1,0 +1,89 @@
+html, body, address, h1, h2, h3, h4, h5, h6, article, aside, footer, header, nav, section, blockquote, dd, div, dl, dt, hr, p, pre, ul, ol, li, figure, figcaption, main, a, abbr, b, bdo, br, cite, code, dfn, em, i, kbd, q, s, samp, small, span, strong, sub, sup, u, var, bdi, data, mark, rb, rp, rt, rtc, ruby, time, wbr, del, ins, area, iframe, img, map, object, param, audio, embed, picture, source, svg, track, video, table, caption, col, colgroup, tbody, td, tfoot, th, thead, tr, form, button, fieldset, input, label, legend, optgroup, option, select, textarea, datalist, keygen, meter, output, progress, menu, details, dialog, menuitem, summary, canvas, template {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article, aside, footer, header, nav, section, figure, figcaption, main, menu, details {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+input[type="date"]{}
+input[type="month"]{}
+input[type="time"]{}
+input[type="week"]{}
+input[type="datetime"]{}
+input[type="datetime-local"]{}
+
+input::-webkit-datetime-edit{}
+input::-webkit-datetime-edit-fields-wrapper{}
+
+input::-webkit-datetime-edit-ampm-field{}
+input::-webkit-datetime-edit-day-field{}
+input::-webkit-datetime-edit-hour-field{}
+input::-webkit-datetime-edit-millisecond-field{}
+input::-webkit-datetime-edit-minute-field{}
+input::-webkit-datetime-edit-month-field{}
+input::-webkit-datetime-edit-second-field{}
+input::-webkit-datetime-edit-week-field{}
+input::-webkit-datetime-edit-year-field{}
+
+input::-webkit-datetime-edit-ampm-field:focus{}
+input::-webkit-datetime-edit-day-field:focus{}
+input::-webkit-datetime-edit-hour-field:focus{}
+input::-webkit-datetime-edit-millisecond-field:focus{}
+input::-webkit-datetime-edit-minute-field:focus{}
+input::-webkit-datetime-edit-month-field:focus{}
+input::-webkit-datetime-edit-second-field:focus{}
+input::-webkit-datetime-edit-week-field:focus{}
+input::-webkit-datetime-edit-year-field:focus{}
+
+input::-webkit-datetime-edit-year-field[disabled]{}
+input::-webkit-datetime-edit-month-field[disabled]{}
+input::-webkit-datetime-edit-week-field[disabled]{}
+input::-webkit-datetime-edit-day-field[disabled]{}
+input::-webkit-datetime-edit-ampm-field[disabled]{}
+input::-webkit-datetime-edit-hour-field[disabled]{}
+input::-webkit-datetime-edit-millisecond-field[disabled]{}
+input::-webkit-datetime-edit-minute-field[disabled]{}
+input::-webkit-datetime-edit-second-field[disabled]{}
+
+input::-webkit-datetime-edit-text{}
+
+input::-webkit-inner-spin-button{}
+
+input::-webkit-calendar-picker-indicator{}
+input::-webkit-calendar-picker-indicator:hover{}
+*/
+
+/*# sourceMappingURL=my-opinion.css.map */

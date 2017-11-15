@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,4pBAAW;EACV,MAAM,EAAE,CAAC;EACT,IAAI,EAAE,OAAO;EACb,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,cAAc,EAAE,QAAQ;;;AAGzB,qFAAqB;EACpB,OAAO,EAAE,KAAK;;;AAGf,aAAkB;EACjB,MAAM,EAAE,IAAI;;;AAGb,iBAA0B;EACzB,OAAO,EAAE,EAAE;EACX,OAAO,EAAE,IAAI;;;AAGd,MAAY;EACX,UAAU,EAAE,IAAI;;;AAGjB,WAA2B;EAC1B,eAAe,EAAE,IAAI;;;ACvBtB,IAAK;EAEJ,WAAW,EAAE,CAAC;;;ACFf,KAAM;EAEL,eAAe,EAAE,QAAQ;EACzB,cAAc,EAAE,CAAC;;;ACgZnB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA+CE",
+"sources": ["../src/reset/placeholders/_reset.scss","../src/reset/_sections.scss","../src/reset/_tabular.scss","../src/my-opinion/_forms.scss"],
+"names": [],
+"file": "my-opinion.css"
+}
