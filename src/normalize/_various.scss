@@ -1,0 +1,13 @@
+//
+// Various
+//
+
+@if $enable-normalize {
+
+	[hidden] {
+		@if $enable-normalize-v6 {
+			display: none;
+		}
+	}
+
+}

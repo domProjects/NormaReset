@@ -7,6 +7,10 @@
 	@if $enable-html5 {
 
 		canvas {
+			@if $enable-normalize-v6 {
+				display: inline-block;
+			}
+
 			@if $enable-normalize-v1 {
 				display: inline-block;
 				*display: inline;
@@ -15,7 +19,9 @@
 		}
 
 		template {
-
+			@if $enable-normalize-v6 {
+				display: none;
+			}
 		}
 	}
 }
