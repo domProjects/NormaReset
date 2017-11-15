@@ -9,10 +9,6 @@
 			line-height: 1.15;
 			-ms-text-size-adjust: 100%;
 			-webkit-text-size-adjust: 100%;
-
-			& [type="button"] {
-				-webkit-appearance: button;
-			}
 		}
 
 		@if $enable-normalize-v1 {
@@ -20,8 +16,16 @@
 			font-size: 100%;
 			-webkit-text-size-adjust: 100%;
 			-ms-text-size-adjust: 100%;
+		}
 
-			& input[type="button"] {
+		& [type="button"] {
+			@if $enable-normalize-v6 {
+				-webkit-appearance: button;
+			}
+		}
+
+		& input[type="button"] {
+			@if $enable-normalize-v1 {
 				-webkit-appearance: button;
 				cursor: pointer;
 				*overflow: visible;
@@ -29,9 +33,4 @@
 		}
 	}
 
-	@if $enable-normalize-v1 {
-		[hidden] {
-			display: none;
-		}
-	}
 }

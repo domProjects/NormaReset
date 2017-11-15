@@ -39,13 +39,11 @@
 		&::-moz-focus-inner {
 			@if $enable-normalize-v6 {
 				border-style: none;
+				padding: 0;
 			}
 
 			@if $enable-normalize-v1 {
 				border: 0;
-			}
-
-			@if $enable-normalize-v1 or $enable-normalize-v6 {
 				padding: 0;
 			}
 		}

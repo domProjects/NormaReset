@@ -5,7 +5,7 @@
 @if $enable-normalize {
 
 	[hidden] {
-		@if $enable-normalize-v6 {
+		@if $enable-normalize-v1 or $enable-normalize-v6 {
 			display: none;
 		}
 	}
