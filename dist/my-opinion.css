@@ -356,7 +356,6 @@ meter {
 meter::-webkit-meter-bar {
   background: none;
   background-color: #adb5bd;
-  height: 1rem;
 }
 meter::-webkit-meter-optimum-value {
   background: green;
@@ -385,41 +384,48 @@ progress {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #adb5bd;
+  background: #adb5bd;
   border: none;
-  color: #000;
+  color: transparent;
   display: block;
   height: 1rem;
   width: 100%;
   vertical-align: baseline;
 }
 progress[value] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  background: #adb5bd;
 }
-progress:not([value]) {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: red;
+progress:not([value])::-webkit-progress-bar {
+  background: transparent;
+}
+progress:not([value])::-moz-progress-bar {
+  background: transparent;
 }
 progress:indeterminate {
-  background-color: red;
+  animation: progress-indeterminate 1.5s linear infinite;
+  background: #adb5bd linear-gradient(to right, #000 10%, #adb5bd 10%) top left/150% 150% no-repeat;
 }
 progress::-ms-fill {
-  background-color: #000;
+  background: #000;
 }
 progress::-webkit-progress-bar {
-  background-color: #adb5bd;
+  background: #adb5bd;
 }
 progress::-webkit-progress-value {
-  background-color: #000;
+  background: #000;
 }
 progress::-moz-progress-bar {
-  background-color: #000;
+  background: #000;
 }
 
+@keyframes progress-indeterminate {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;

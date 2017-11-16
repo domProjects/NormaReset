@@ -518,37 +518,40 @@
 			-webkit-appearance: none;
 			-moz-appearance: none;
 			appearance: none;
-			background-color: $gray-500;
+			background: $gray-500;
 			border: none;
-			color: $black;
+			color: transparent;
 			display: block;
 			height: $spacer;
 			width: 100%;
 			vertical-align: baseline;
 
 			&[value] {
-				-webkit-appearance: none;
-				-moz-appearance: none;
-				appearance: none;
+				background: $gray-500;
 			}
 
 			&:not([value]) {
-				-webkit-appearance: none;
-				-moz-appearance: none;
-				appearance: none;
-				background-color: red;
+
+				&::-webkit-progress-bar {
+					background: transparent;
+				}
+
+				&::-moz-progress-bar {
+					background: transparent;
+				}
 			}
 
 			&:indeterminate {
-				background-color: red;
+				animation: progress-indeterminate 1.5s linear infinite;
+				background: $gray-500 linear-gradient(to right, $black 10%, $gray-500 10%) top left/150% 150% no-repeat;
 			}
 
 			&::-ms-fill {
-				background-color: $black;
+				background: $black;
 			}
 
 			&::-webkit-progress-bar {
-				background-color: $gray-500;
+				background: $gray-500;
 			}
 
 			&::-webkit-progress-inner-element {
@@ -556,11 +559,20 @@
 			}
 
 			&::-webkit-progress-value {
-				background-color: $black;
+				background: $black;
 			}
 
 			&::-moz-progress-bar {
-				background-color: $black;
+				background: $black;
+			}
+		}
+
+		@keyframes progress-indeterminate {
+			0% {
+				background-position: 200% 0;
+			}
+			100% {
+				background-position: -200% 0;
 			}
 		}
 
