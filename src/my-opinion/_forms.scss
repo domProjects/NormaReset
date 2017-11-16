@@ -252,6 +252,7 @@
 			-moz-appearance: none;
 			appearance: none;
 			background: transparent;
+			border: none;
 			display: block;
 			margin: 0;
 			padding: 0;
@@ -276,6 +277,7 @@
 
 			&::-webkit-slider-runnable-track {
 				background-color: $gray-500;
+				border: none;
 				height: $spacer;
 				width: 100%;
 			}
@@ -284,9 +286,8 @@
 				-webkit-appearance: none;
 				-moz-appearance: none;
 				appearance: none;
-
 				background-color: #000;
-				border: 0;
+				border: none;
 				cursor: pointer;
 				height: $spacer;
 				width: $spacer;
@@ -294,6 +295,8 @@
 
 			&::-moz-range-thumb {
 				background-color: #000;
+				border: none;
+				border-radius: 0;
 				cursor: pointer;
 				height: $spacer;
 				width: $spacer;
@@ -301,10 +304,19 @@
 
 			&::-moz-range-track {
 				background-color: $gray-500;
+				border: none;
 				height: $spacer;
 				width: 100%;
 			}
 
+			&::-ms-fill-lower {
+				background-color: $gray-500;
+			}
+
+			&::-ms-fill-upper {
+
+			}
+			 
 			&::-ms-tooltip {
 
 			}
@@ -317,19 +329,9 @@
 
 			}
 			 
-			&::-ms-fill-upper {
-				background-color: $gray-500;
-				height: $spacer;
-			}
-			 
-			&::-ms-fill-lower {
-				background-color: $gray-700;
-				height: $spacer;
-			}
-			 
 			&::-ms-thumb {
 				background-color: #000;
-				border: 1px solid #000;
+				border: none;
 				cursor: pointer;
 				height: $spacer;
 				width: $spacer;
@@ -337,14 +339,13 @@
 			 
 			&::-ms-track {
 				background: transparent; 
+				background-color: $gray-500;
 				border-color: transparent;
 				color: transparent;
 				cursor: pointer;
 				display: block;
-				width: 100%;
-
-				background-color: $gray-500;
 				height: $spacer;
+				width: 100%;
 			}
 		}
 
