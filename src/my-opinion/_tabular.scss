@@ -4,13 +4,19 @@
 
 @if $enable-my-opinion {
 	table {
-		width: 100%;
+		background-color: $body-bg;
+		border-collapse: collapse;
+		margin-bottom: $spacer;
 		max-width: 100%;
-		background-color: transparent;
+		width: 100%;
 	}
 
 	caption {
-
+		color: $text-muted;
+		padding-top: $table-cell-padding;
+		padding-bottom: $table-cell-padding;
+		text-align: left;
+		caption-side: top;
 	}
 
 	col {
@@ -23,22 +29,39 @@
 
 	tbody {
 
+		& + tbody {
+			border-top: (2 * $table-border-width) solid $table-border-color;
+		}
 	}
 
 	td {
-
+		border-top: $table-border-width solid $table-border-color;
+		padding: $table-cell-padding;
+		vertical-align: top;
 	}
 
 	tfoot {
-
+		& td {
+			border-top: (2 * $table-border-width) solid $table-border-color;
+			border-bottom: $table-border-width solid $table-border-color;
+			padding: $table-cell-padding;
+			vertical-align: top;
+		}
 	}
 
 	th {
-
+		border-top: $table-border-width solid $table-border-color;
+		padding: $table-cell-padding;
+		vertical-align: top;
+		text-align: inherit;
 	}
 
 	thead {
 
+		& th {
+			border-bottom: (2 * $table-border-width) solid $table-border-color;
+			vertical-align: bottom;
+		}
 	}
 
 	tr {

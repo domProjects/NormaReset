@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta name="viewport" content="initial-scale=1, width=device-width">
+		<title>my-opinion</title>
+		<link rel="stylesheet" href="../dist/my-opinion.min.css">
+	</head>
+	<body>
+
+		<h1>my-opinion CSS</h1>
+
+<!--
+	===
+	=== SECTIONS
+	===
+-->
+		<h2>Sections</h3>
+		<h3>Heading</h3>
+
+		<h1>h1. my-opinion heading</h1>
+		<h2>h2. my-opinion heading</h2>
+		<h3>h3. my-opinion heading</h3>
+		<h4>h4. my-opinion heading</h4>
+		<h5>h5. my-opinion heading</h5>
+		<h6>h6. my-opinion heading</h6>
+
+<!--
+	===
+	=== TABULAR
+	===
+-->
+		<h2>Tabular</h3>
+		<table>
+			<caption>Caption text</caption>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Col 1</th>
+					<th>Col 2</th>
+					<th>Col 3</th>
+					<th>Col 4</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>1</th>
+					<td>Text</td>
+					<td>Text</td>
+					<td>Text</td>
+					<td>Text</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5">Foot text</td>
+				</tr>
+			</tfoot>
+		</table>
+
+<!--
+	===
+	=== FORMS
+	===
+-->
+		<h2>Forms</h3>
+
+		<h3>Input</h3>
+		<h4>Type [ range ]</h4>
+		<input type="range" min="0" max="100" step="10" value="80">
+
+		<input type="range" min="0" max="100" value="20" list="tickmarks">
+		<datalist id="tickmarks">
+			<option value="0" label="0">
+			<option value="10">
+			<option value="20">
+			<option value="30">
+			<option value="40">
+			<option value="50" label="50">
+			<option value="60">
+			<option value="70">
+			<option value="80">
+			<option value="90">
+			<option value="100" label="100">
+		</datalist>
+
+		<h3>Meter</h3>
+		<meter min="0" max="100" low="25" high="75" optimum="100" value="20"></meter>
+		<meter min="0" max="100" low="25" high="75" optimum="100" value="40"></meter>
+		<meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
+
+		<h3>Progress</h3>
+		<progress value="60" max="100">60%</progress>
+		<progress></progress>
+
+
+	</body>
+</html>

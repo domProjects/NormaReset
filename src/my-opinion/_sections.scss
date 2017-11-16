@@ -5,52 +5,50 @@
 @if $enable-my-opinion {
 	body {
 
+		background-color: $body-bg;
+		color: $body-color;
+		font-family: $font-family-base;
+		font-size: $font-size-base;
+		font-weight: $font-weight-base;
+		line-height: $line-height-base;
+		margin: 0;
+		text-align: left;
 	}
 
 	address {
 
 	}
 
-	h1 {
+	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
 		font-family: inherit;
-		font-weight: 500;
-		font-size: 2.5rem;
+		font-weight: $headings-font-weight;
+		margin: 0;
+		margin-bottom: $headings-margin-bottom;
+	}
+
+	h1 {
+		font-size: 2.25rem;
 	}
 
 	h2 {
-		color: inherit;
-		font-family: inherit;
-		font-weight: 500;
-		font-size: 2rem;
+		font-size: $headings-font-size-h2;
 	}
 
 	h3 {
-		color: inherit;
-		font-family: inherit;
-		font-weight: 500;
-		font-size: 1.75rem;
+		font-size: $headings-font-size-h3;
 	}
 
 	h4 {
-		color: inherit;
-		font-family: inherit;
-		font-weight: 500;
-		font-size: 1.5rem;
+		font-size: $headings-font-size-h4;
 	}
 
 	h5 {
-		color: inherit;
-		font-family: inherit;
-		font-weight: 500;
-		font-size: 1.25rem;
+		font-size: $headings-font-size-h5;
 	}
 
 	h6 {
-		color: inherit;
-		font-family: inherit;
-		font-weight: 500;
-		font-size: 1rem;
+		font-size: $headings-font-size-h6;
 	}
 
 	@if $enable-html4 {
@@ -60,6 +58,11 @@
 	}
 
 	@if $enable-html5 {
+
+		article, aside, footer, header, nav, section {
+			display: block;
+		}
+
 		article {
 
 		}

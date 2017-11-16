@@ -248,8 +248,18 @@
 		}
 
 		[type="range"] {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background: transparent;
+			display: block;
+			margin: 0;
+			padding: 0;
+			height: $spacer;
+			width: 100%;
 
 			&:focus {
+				outline: none;
 
 				&::-webkit-slider-runnable-track {
 
@@ -264,20 +274,35 @@
 				}
 			}
 
-			&::-webkit-slider-thumb {
-
+			&::-webkit-slider-runnable-track {
+				background-color: $gray-500;
+				height: $spacer;
+				width: 100%;
 			}
 
-			&::-webkit-slider-runnable-track {
+			&::-webkit-slider-thumb {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
 
+				background-color: #000;
+				border: 0;
+				cursor: pointer;
+				height: $spacer;
+				width: $spacer;
 			}
 
 			&::-moz-range-thumb {
-
+				background-color: #000;
+				cursor: pointer;
+				height: $spacer;
+				width: $spacer;
 			}
 
 			&::-moz-range-track {
-
+				background-color: $gray-500;
+				height: $spacer;
+				width: 100%;
 			}
 
 			&::-ms-tooltip {
@@ -293,19 +318,33 @@
 			}
 			 
 			&::-ms-fill-upper {
-
+				background-color: $gray-500;
+				height: $spacer;
 			}
 			 
 			&::-ms-fill-lower {
-
+				background-color: $gray-700;
+				height: $spacer;
 			}
 			 
 			&::-ms-thumb {
-
+				background-color: #000;
+				border: 1px solid #000;
+				cursor: pointer;
+				height: $spacer;
+				width: $spacer;
 			}
 			 
 			&::-ms-track {
+				background: transparent; 
+				border-color: transparent;
+				color: transparent;
+				cursor: pointer;
+				display: block;
+				width: 100%;
 
+				background-color: $gray-500;
+				height: $spacer;
 			}
 		}
 
@@ -419,9 +458,19 @@
 		}
 
 		meter {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background: none;
+			background-color: $gray-500;
+			display: block;
+			height: $spacer;
+			width: 100%;
+			vertical-align: baseline;
 
 			&::-webkit-meter-bar {
-
+				background: none;
+				background-color: $gray-500;
 			}
 
 			&::-webkit-meter-optimum-value {
@@ -458,30 +507,52 @@
 		}
 
 		progress {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background-color: $gray-500;
+			border: none;
+			color: $black;
+			display: block;
+			height: $spacer;
+			width: 100%;
 			vertical-align: baseline;
 
 			&[value] {
-
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
 			}
 
 			&:not([value]) {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				background-color: red;
+			}
 
+			&:indeterminate {
+				background-color: red;
 			}
 
 			&::-ms-fill {
-
+				background-color: $black;
 			}
 
 			&::-webkit-progress-bar {
+				background-color: $gray-500;
+			}
+
+			&::-webkit-progress-inner-element {
 
 			}
 
 			&::-webkit-progress-value {
-
+				background-color: $black;
 			}
 
 			&::-moz-progress-bar {
-
+				background-color: $black;
 			}
 		}
 
