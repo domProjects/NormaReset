@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -179,14 +180,13 @@ button {
   padding: .375rem .75rem;
   text-align: center;
   text-transform: none;
-  transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   -webkit-appearance: button;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   vertical-align: middle;
   white-space: nowrap;
   overflow: visible;
@@ -213,6 +213,21 @@ button::-moz-focus-inner {
   touch-action: manipulation;
 }
 
+input {
+  background-clip: padding-box;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 0;
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: .375rem .75rem;
+  width: 100%;
+  overflow: visible;
+}
 input:not([type="range"]) {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -222,20 +237,121 @@ input:not([type="range"]) {
   border-style: none;
   padding: 0;
 }
+[type="button"]:hover {
+  cursor: pointer;
+}
 
 [type="checkbox"] {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+[type="checkbox"] + label {
+  cursor: pointer;
+  margin-right: 1rem;
+  position: relative;
+}
+[type="checkbox"] + label:before {
+  background-color: #adb5bd;
+  content: '';
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: text-top;
+  width: 1rem;
+  height: 1rem;
+}
+[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: #000;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
+[type="checkbox"]:hover + label:before {
+  background-color: #ced4da;
+}
+[type="checkbox"]:disabled + label {
+  color: #adb5bd;
+  cursor: auto;
+}
+[type="checkbox"]:disabled + label:before {
+  background-color: #dee2e6;
 }
 [type="checkbox"]::-ms-check {
   display: none;
 }
 
+[type="file"]:hover {
+  cursor: pointer;
+}
+
 [type="radio"] {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+[type="radio"] + label {
+  cursor: pointer;
+  margin-right: 1rem;
+  position: relative;
+}
+[type="radio"] + label:before {
+  background-color: #adb5bd;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+}
+[type="radio"]:checked + label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  border-radius: 50%;
+}
+[type="radio"]:hover + label:before {
+  background-color: #ced4da;
+}
+[type="radio"]:disabled + label {
+  color: #adb5bd;
+  cursor: auto;
+}
+[type="radio"]:disabled + label:before {
+  background-color: #dee2e6;
 }
 [type="radio"]::-ms-check {
   display: none;
@@ -248,6 +364,9 @@ input:not([type="range"]) {
   border-style: none;
   padding: 0;
 }
+[type="reset"]:hover {
+  cursor: pointer;
+}
 
 [type="submit"] {
   -webkit-appearance: button;
@@ -255,6 +374,23 @@ input:not([type="range"]) {
 [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
+}
+[type="submit"]:hover {
+  cursor: pointer;
+}
+
+[type="color"] {
+  height: 2.4rem;
+  padding: 0;
+}
+[type="color"]:hover {
+  cursor: pointer;
+}
+[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+[type="color"]::-moz-color-swatch {
+  border: none;
 }
 
 [type="date"] {
@@ -278,8 +414,8 @@ input:not([type="range"]) {
 
 [type="range"] {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: transparent;
   border: none;
   display: block;
@@ -299,8 +435,7 @@ input:not([type="range"]) {
 }
 [type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+          appearance: none;
   background-color: #000;
   border: none;
   cursor: pointer;
@@ -362,20 +497,34 @@ label {
   touch-action: manipulation;
 }
 
+optgroup {
+  font-family: inherit;
+}
+
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  background-clip: padding-box;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 0;
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: .375rem .75rem;
   text-transform: none;
+  width: 100%;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
-select::-ms-expand {
-  display: none;
+select:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
 }
 
 textarea {
   overflow: auto;
+  font-family: inherit;
   resize: vertical;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -418,8 +567,8 @@ output {
 
 progress {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: #adb5bd;
   border: none;
   color: transparent;
@@ -438,7 +587,9 @@ progress:not([value])::-moz-progress-bar {
   background: transparent;
 }
 progress:indeterminate {
-  animation: progress-indeterminate 1.5s linear infinite;
+  -webkit-animation: progress-indeterminate 1.5s linear infinite;
+          animation: progress-indeterminate 1.5s linear infinite;
+  background: #adb5bd -webkit-gradient(linear, left top, right top, color-stop(10%, #000), color-stop(10%, #adb5bd)) top left/150% 150% no-repeat;
   background: #adb5bd linear-gradient(to right, #000 10%, #adb5bd 10%) top left/150% 150% no-repeat;
 }
 progress::-ms-fill {
@@ -452,6 +603,15 @@ progress::-webkit-progress-value {
 }
 progress::-moz-progress-bar {
   background: #000;
+}
+
+@-webkit-keyframes progress-indeterminate {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 @keyframes progress-indeterminate {
