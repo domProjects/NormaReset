@@ -13,6 +13,16 @@
 		line-height: $line-height-base;
 		margin: 0;
 		text-align: left;
+
+		// Scrollbar
+		@if $enable-scrollbar {
+
+			-webkit-overflow-scrolling: touch;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			overflow-y: scroll; 
+
+			scrollbar-face-color: $black;
+		}
 	}
 
 	address {
