@@ -10,6 +10,9 @@
 	@if $enable-html5 {
 		details {
 
+			&::-webkit-details-marker {
+
+			}
 		}
 
 		dialog {
@@ -24,6 +27,10 @@
 			display: list-item;
 			-ms-touch-action: manipulation;
 			touch-action: manipulation;
+
+			&::-webkit-details-marker {
+
+			}
 		}
 	}
 }
