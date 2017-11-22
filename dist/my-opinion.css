@@ -228,6 +228,9 @@ input {
   width: 100%;
   overflow: visible;
 }
+input[type="file"] {
+  border-style: none;
+}
 input:not([type="range"]) {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -296,8 +299,18 @@ input:not([type="range"]) {
   display: none;
 }
 
+[type="file"] {
+  padding-left: 0;
+}
 [type="file"]:hover {
   cursor: pointer;
+}
+[type="file"]::-webkit-file-upload-button {
+  border: 1px solid #000;
+  border-radius: 0;
+  cursor: pointer;
+  font: inherit;
+  -webkit-appearance: button;
 }
 
 [type="image"] {
@@ -575,6 +588,7 @@ input:not([type="range"]) {
 }
 
 label {
+  display: inline-block;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
@@ -704,11 +718,6 @@ progress::-ms-fill {
     background-position: -200% 0;
   }
 }
-::-webkit-file-upload-button {
-  font: inherit;
-  -webkit-appearance: button;
-}
-
 summary {
   display: list-item;
   -ms-touch-action: manipulation;

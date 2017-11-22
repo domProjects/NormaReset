@@ -72,6 +72,10 @@
 		width: 100%;
 		overflow: visible;
 
+		&[type="file"] {
+			border-style: none;
+		}
+
 		&:not([type="range"]) {
 			-ms-touch-action: manipulation;
 			touch-action: manipulation;
@@ -247,9 +251,18 @@
 	}
 
 	[type="file"] {
+		padding-left: 0;
 
 		&:hover {
 			cursor: pointer;
+		}
+
+		&::-webkit-file-upload-button {
+			border: 1px solid $black;
+			border-radius: 0;
+			cursor: pointer;
+			font: inherit;
+			-webkit-appearance: button;
 		}
 
 		&::-ms-browse {
@@ -818,6 +831,7 @@
 	}
 
 	label {
+		display: inline-block;
 		-ms-touch-action: manipulation;
 		touch-action: manipulation;
 	}
@@ -1075,11 +1089,6 @@
 			100% {
 				background-position: -200% 0;
 			}
-		}
-
-		::-webkit-file-upload-button {
-			font: inherit;
-			-webkit-appearance: button;
 		}
 
 		// Form validation
