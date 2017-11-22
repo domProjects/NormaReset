@@ -4,7 +4,6 @@
 
 @if $enable-my-opinion {
 	body {
-
 		background-color: $body-bg;
 		color: $body-color;
 		font-family: $font-family-base;
@@ -16,11 +15,9 @@
 
 		// Scrollbar
 		@if $enable-scrollbar {
-
 			-webkit-overflow-scrolling: touch;
 			-ms-overflow-style: -ms-autohiding-scrollbar;
 			overflow-y: scroll; 
-
 			scrollbar-face-color: $black;
 		}
 	}
@@ -33,12 +30,11 @@
 		color: inherit;
 		font-family: inherit;
 		font-weight: $headings-font-weight;
-		margin: 0;
-		margin-bottom: $headings-margin-bottom;
+		margin: 0 0 $headings-margin-bottom;
 	}
 
 	h1 {
-		font-size: 2.25rem;
+		font-size: $headings-font-size-h1;
 	}
 
 	h2 {

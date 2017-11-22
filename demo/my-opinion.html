@@ -63,9 +63,6 @@
 			<h4>type="date"</h4>
 			<input type="date">
 
-			<h4>type="datetime" - <strong>obsolete: replaced by [ <i>datetime-local</i> ]</strong></h4>
-			<input type="datetime">
-
 			<h4>type="datetime-local"</h4>
 			<input type="datetime-local">
 
@@ -146,6 +143,9 @@
 				<option value="val3">Value 3</option>
 			</select>
 
+			<h3>&lt;textarea&gt;</h3>
+			<textarea>Vous pouvez écrire quelque chose ici.</textarea>
+
 <!--
 	===
 	=== GROUPING
@@ -175,7 +175,7 @@
 body {
   color: red;
 }
-			</pre>
+</pre>
 
 			<h3>&lt;ul&gt; <small>with &lt;li&gt;</small></h3>
 			<ul>
@@ -335,9 +335,19 @@ body {
 
 			<h3>&lt;kbd&gt;</h3>
 			<p>Enregistrez le document en appuyant sur <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+			<p>Copiez le texte en appuyant sur <kbd><kbd>Ctrl</kbd></kbd> + <kbd>C</kbd></p>
+
+			<h3>&lt;mark&gt;</h3>
+			<p>L'élément &lt;mark&gt; est utilisé pour <mark>mettre en avant</mark> du texte pertinent dans le contexte.</p>
 
 			<h3>&lt;q&gt;</h3>
 			<p>Chaque fois que Kenny est tué, Stan dira <q cite="http://fr.wikipedia.org/wiki/Kenny_McCormick#Le_dialogue_rituel">Oh mon Dieu, ils ont tué Kenny !</q>.</p>
+
+			<h3>&lt;ruby&gt; with &lt;rp&gt;, &lt;rt&gt;</h3>
+			<ruby>
+				漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+				字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+			</ruby>
 
 			<h3>&lt;s&gt;</h3>
 			<p>Le plat du jour : <s>saumon à la hollandaise</s> <em>plus disponible</em></p>
@@ -363,6 +373,8 @@ body {
 			<h3>&lt;var&gt;</h3>
 			<p>Une équation simple : <var>x</var> = <var>y</var> + 2</p>
 
+			<h3>&lt;wbr&gt;</h3>
+			<p>http://voici<wbr>.une<wbr>.très<wbr>.très<wbr>.longue<wbr>.URL<wbr>.com/avec<wbr>/pleins<wbr>/de<wbr>/niveaux<wbr>/de<wbr>/pages</p>
 		</div>
 	</body>
 </html>

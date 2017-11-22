@@ -3,6 +3,10 @@
 //
 
 @if $enable-my-opinion {
+	blockquote, p, pre, ul, ol, figure {
+		margin: 0 0 $spacer;
+	}
+
 	blockquote {
 
 		&:before {
@@ -26,7 +30,7 @@
 	}
 
 	dt {
-
+		font-weight: 700;
 	}
 
 	hr {
@@ -57,6 +61,8 @@
 	}
 
 	pre {
+		color: $black;
+		font-family: $font-family-monospace;
 		overflow: auto;
 		-ms-overflow-style: scrollbar;
 	}
