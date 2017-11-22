@@ -10,8 +10,11 @@
 	@if $enable-html5 {
 		details {
 
-			&::-webkit-details-marker {
+			&[open] > summary {
 
+				&::before {
+
+				}
 			}
 		}
 
@@ -29,6 +32,10 @@
 			touch-action: manipulation;
 
 			&::-webkit-details-marker {
+
+			}
+
+			&::before {
 
 			}
 		}
