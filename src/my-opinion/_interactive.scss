@@ -9,11 +9,33 @@
 
 	@if $enable-html5 {
 		details {
+			border: 1px solid $black;
+			display: block;
+			margin: 0 0 $spacer 0;
+			padding: .375rem .75rem;
 
-			&[open] > summary {
+			&[open] {
 
-				&::before {
+				& > summary {
+					background-color: $black;
+					border-bottom: 1px solid $black;
+					color: $white;
+					margin-bottom: .375rem;
+				}
 
+
+				&:hover {
+
+					& > summary {
+						background-color: $black;
+					}
+				}
+			}
+
+			&:hover {
+
+				& > summary {
+					background-color: $gray-500;
 				}
 			}
 		}
@@ -27,11 +49,20 @@
 		}
 
 		summary {
+			background-color: $gray-400;
+			cursor: pointer;
 			display: list-item;
+			outline: none;
+			margin: -.375rem -.75rem;
+			padding: .375rem .75rem;
 			-ms-touch-action: manipulation;
 			touch-action: manipulation;
 
 			&::-webkit-details-marker {
+				//display: none;
+			}
+
+			&::after {
 
 			}
 

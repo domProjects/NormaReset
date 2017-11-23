@@ -37,7 +37,7 @@
 
 				&:focus {
 					color: inherit;
-					outline: 0;
+					outline: none;
 					text-decoration: none;
 				}
 
@@ -54,7 +54,7 @@
 		-webkit-text-decoration: underline dotted;
 		text-decoration: underline dotted;
 		cursor: help;
-		border-bottom: 0;
+		border-bottom: none;
 
 		&[title] {
 		
