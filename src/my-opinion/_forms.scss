@@ -820,6 +820,12 @@
 		}
 	}
 
+	@if $enable-html4 {
+		keygen {
+
+		}
+	}
+
 	label {
 		display: inline-block;
 		touch-action: manipulation;
@@ -926,10 +932,6 @@
 	@if $enable-html5 {
 
 		datalist {
-
-		}
-
-		keygen {
 
 		}
 

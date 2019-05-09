@@ -3,8 +3,15 @@
 //
 
 @if $enable-my-opinion {
-	menu {
 
+	@if $enable-html4 {
+		menu {
+
+		}
+
+		menuitem {
+
+		}
 	}
 
 	@if $enable-html5 {
@@ -41,10 +48,6 @@
 		}
 
 		dialog {
-
-		}
-
-		menuitem {
 
 		}
 
